@@ -1,0 +1,5 @@
+
+target 'PLRTCStreamingKitDemo' do
+  pod "PLRTCStreamingKit", :path => "../"
+  pod "PLPlayerKit"
+end

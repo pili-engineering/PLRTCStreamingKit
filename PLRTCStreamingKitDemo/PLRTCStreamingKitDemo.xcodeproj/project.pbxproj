@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		026A640FFB85D91F3F04B72A /* libPods-PLRTCStreamingKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F81A4A659967EA5CFA27187 /* libPods-PLRTCStreamingKitDemo.a */; };
+		939879131FCD23B5003CDB4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879121FCD23B5003CDB4E /* AppDelegate.m */; };
+		939879191FCD23B5003CDB4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939879171FCD23B5003CDB4E /* Main.storyboard */; };
+		9398791B1FCD23B5003CDB4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9398791A1FCD23B5003CDB4E /* Assets.xcassets */; };
+		9398791E1FCD23B5003CDB4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9398791C1FCD23B5003CDB4E /* LaunchScreen.storyboard */; };
+		939879211FCD23B5003CDB4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879201FCD23B5003CDB4E /* main.m */; };
+		9398792B1FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398792A1FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests.m */; };
+		939879451FCD4A22003CDB4E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9398793D1FCD4A22003CDB4E /* LoginViewController.xib */; };
+		939879461FCD4A22003CDB4E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398793E1FCD4A22003CDB4E /* LoginViewController.m */; };
+		939879471FCD4A22003CDB4E /* AppServerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879411FCD4A22003CDB4E /* AppServerBase.m */; };
+		939879481FCD4A22003CDB4E /* PLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879431FCD4A22003CDB4E /* PLHomeViewController.m */; };
+		939879491FCD4A22003CDB4E /* PLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879441FCD4A22003CDB4E /* PLNavigationController.m */; };
+		9398794E1FCD4ADF003CDB4E /* PLRTCChiefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398794D1FCD4ADF003CDB4E /* PLRTCChiefViewController.m */; };
+		939879551FCD4B1A003CDB4E /* PLRTCSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879531FCD4B1A003CDB4E /* PLRTCSettingViewController.m */; };
+		939879561FCD4B1A003CDB4E /* PLRTCSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 939879541FCD4B1A003CDB4E /* PLRTCSettingViewController.xib */; };
+		939879591FCD4B47003CDB4E /* PLRTCStreamingChiefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879581FCD4B47003CDB4E /* PLRTCStreamingChiefViewController.m */; };
+		9398795C1FCD4B5A003CDB4E /* PLRTCStreamingViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398795B1FCD4B5A003CDB4E /* PLRTCStreamingViewerViewController.m */; };
+		9398795F1FCD4BB8003CDB4E /* PLRTCStreamingSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398795E1FCD4BB8003CDB4E /* PLRTCStreamingSettingView.m */; };
+		939879621FCD4BE8003CDB4E /* PLRTCStreamingSettingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879611FCD4BE8003CDB4E /* PLRTCStreamingSettingManager.m */; };
+		939879681FCD50AF003CDB4E /* PLRTCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879671FCD50AF003CDB4E /* PLRTCMasterViewController.m */; };
+		9398796B1FCD50E8003CDB4E /* PLRTCStreamingMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398796A1FCD50E8003CDB4E /* PLRTCStreamingMasterViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		939879271FCD23B5003CDB4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 939879061FCD23B5003CDB4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9398790D1FCD23B5003CDB4E;
+			remoteInfo = PLRTCStreamingKitDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F81A4A659967EA5CFA27187 /* libPods-PLRTCStreamingKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PLRTCStreamingKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A78882115E3C266FEF9EF3 /* Pods-PLRTCStreamingKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLRTCStreamingKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLRTCStreamingKitDemo/Pods-PLRTCStreamingKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8B512E4D21BC6C50B7D80025 /* Pods-PLRTCStreamingKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLRTCStreamingKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PLRTCStreamingKitDemo/Pods-PLRTCStreamingKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9398790E1FCD23B5003CDB4E /* PLRTCStreamingKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLRTCStreamingKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		939879111FCD23B5003CDB4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		939879121FCD23B5003CDB4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		939879181FCD23B5003CDB4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9398791A1FCD23B5003CDB4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9398791D1FCD23B5003CDB4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9398791F1FCD23B5003CDB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		939879201FCD23B5003CDB4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		939879261FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PLRTCStreamingKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9398792A1FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRTCStreamingKitDemoUITests.m; sourceTree = "<group>"; };
+		9398792C1FCD23B5003CDB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9398793C1FCD4A22003CDB4E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		9398793D1FCD4A22003CDB4E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		9398793E1FCD4A22003CDB4E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		9398793F1FCD4A22003CDB4E /* PLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLHomeViewController.h; sourceTree = "<group>"; };
+		939879401FCD4A22003CDB4E /* AppServerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppServerBase.h; sourceTree = "<group>"; };
+		939879411FCD4A22003CDB4E /* AppServerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppServerBase.m; sourceTree = "<group>"; };
+		939879421FCD4A22003CDB4E /* PLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLNavigationController.h; sourceTree = "<group>"; };
+		939879431FCD4A22003CDB4E /* PLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLHomeViewController.m; sourceTree = "<group>"; };
+		939879441FCD4A22003CDB4E /* PLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLNavigationController.m; sourceTree = "<group>"; };
+		9398794C1FCD4ADF003CDB4E /* PLRTCChiefViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRTCChiefViewController.h; sourceTree = "<group>"; };
+		9398794D1FCD4ADF003CDB4E /* PLRTCChiefViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRTCChiefViewController.m; sourceTree = "<group>"; };
+		939879521FCD4B1A003CDB4E /* PLRTCSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRTCSettingViewController.h; sourceTree = "<group>"; };
+		939879531FCD4B1A003CDB4E /* PLRTCSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRTCSettingViewController.m; sourceTree = "<group>"; };
+		939879541FCD4B1A003CDB4E /* PLRTCSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PLRTCSettingViewController.xib; sourceTree = "<group>"; };
+		939879571FCD4B47003CDB4E /* PLRTCStreamingChiefViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRTCStreamingChiefViewController.h; sourceTree = "<group>"; };
+		939879581FCD4B47003CDB4E /* PLRTCStreamingChiefViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRTCStreamingChiefViewController.m; sourceTree = "<group>"; };
+		9398795A1FCD4B5A003CDB4E /* PLRTCStreamingViewerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRTCStreamingViewerViewController.h; sourceTree = "<group>"; };
+		9398795B1FCD4B5A003CDB4E /* PLRTCStreamingViewerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRTCStreamingViewerViewController.m; sourceTree = "<group>"; };
+		9398795D1FCD4BB8003CDB4E /* PLRTCStreamingSettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRTCStreamingSettingView.h; sourceTree = "<group>"; };
+		9398795E1FCD4BB8003CDB4E /* PLRTCStreamingSettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRTCStreamingSettingView.m; sourceTree = "<group>"; };
+		939879601FCD4BE8003CDB4E /* PLRTCStreamingSettingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRTCStreamingSettingManager.h; sourceTree = "<group>"; };
+		939879611FCD4BE8003CDB4E /* PLRTCStreamingSettingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRTCStreamingSettingManager.m; sourceTree = "<group>"; };
+		939879661FCD50AF003CDB4E /* PLRTCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRTCMasterViewController.h; sourceTree = "<group>"; };
+		939879671FCD50AF003CDB4E /* PLRTCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRTCMasterViewController.m; sourceTree = "<group>"; };
+		939879691FCD50E8003CDB4E /* PLRTCStreamingMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRTCStreamingMasterViewController.h; sourceTree = "<group>"; };
+		9398796A1FCD50E8003CDB4E /* PLRTCStreamingMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRTCStreamingMasterViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9398790B1FCD23B5003CDB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026A640FFB85D91F3F04B72A /* libPods-PLRTCStreamingKitDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		939879231FCD23B5003CDB4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DA6B5E546B4EB86F2725CBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F81A4A659967EA5CFA27187 /* libPods-PLRTCStreamingKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		939879051FCD23B5003CDB4E = {
+			isa = PBXGroup;
+			children = (
+				939879101FCD23B5003CDB4E /* PLRTCStreamingKitDemo */,
+				939879291FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests */,
+				9398790F1FCD23B5003CDB4E /* Products */,
+				F7013C7A1B7982C938FB040B /* Pods */,
+				1DA6B5E546B4EB86F2725CBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9398790F1FCD23B5003CDB4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9398790E1FCD23B5003CDB4E /* PLRTCStreamingKitDemo.app */,
+				939879261FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		939879101FCD23B5003CDB4E /* PLRTCStreamingKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9398794B1FCD4A9E003CDB4E /* PLRTCDemo */,
+				9398794A1FCD4A9E003CDB4E /* PLRTCStreamingDemo */,
+				939879111FCD23B5003CDB4E /* AppDelegate.h */,
+				939879121FCD23B5003CDB4E /* AppDelegate.m */,
+				939879401FCD4A22003CDB4E /* AppServerBase.h */,
+				939879411FCD4A22003CDB4E /* AppServerBase.m */,
+				9398793C1FCD4A22003CDB4E /* LoginViewController.h */,
+				9398793E1FCD4A22003CDB4E /* LoginViewController.m */,
+				9398793D1FCD4A22003CDB4E /* LoginViewController.xib */,
+				9398793F1FCD4A22003CDB4E /* PLHomeViewController.h */,
+				939879431FCD4A22003CDB4E /* PLHomeViewController.m */,
+				939879421FCD4A22003CDB4E /* PLNavigationController.h */,
+				939879441FCD4A22003CDB4E /* PLNavigationController.m */,
+				939879171FCD23B5003CDB4E /* Main.storyboard */,
+				9398791A1FCD23B5003CDB4E /* Assets.xcassets */,
+				9398791C1FCD23B5003CDB4E /* LaunchScreen.storyboard */,
+				9398791F1FCD23B5003CDB4E /* Info.plist */,
+				939879201FCD23B5003CDB4E /* main.m */,
+			);
+			path = PLRTCStreamingKitDemo;
+			sourceTree = "<group>";
+		};
+		939879291FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9398792A1FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests.m */,
+				9398792C1FCD23B5003CDB4E /* Info.plist */,
+			);
+			path = PLRTCStreamingKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		9398794A1FCD4A9E003CDB4E /* PLRTCStreamingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				939879571FCD4B47003CDB4E /* PLRTCStreamingChiefViewController.h */,
+				939879581FCD4B47003CDB4E /* PLRTCStreamingChiefViewController.m */,
+				9398795A1FCD4B5A003CDB4E /* PLRTCStreamingViewerViewController.h */,
+				9398795B1FCD4B5A003CDB4E /* PLRTCStreamingViewerViewController.m */,
+				9398795D1FCD4BB8003CDB4E /* PLRTCStreamingSettingView.h */,
+				9398795E1FCD4BB8003CDB4E /* PLRTCStreamingSettingView.m */,
+				939879601FCD4BE8003CDB4E /* PLRTCStreamingSettingManager.h */,
+				939879611FCD4BE8003CDB4E /* PLRTCStreamingSettingManager.m */,
+				939879691FCD50E8003CDB4E /* PLRTCStreamingMasterViewController.h */,
+				9398796A1FCD50E8003CDB4E /* PLRTCStreamingMasterViewController.m */,
+			);
+			path = PLRTCStreamingDemo;
+			sourceTree = "<group>";
+		};
+		9398794B1FCD4A9E003CDB4E /* PLRTCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9398794C1FCD4ADF003CDB4E /* PLRTCChiefViewController.h */,
+				9398794D1FCD4ADF003CDB4E /* PLRTCChiefViewController.m */,
+				939879521FCD4B1A003CDB4E /* PLRTCSettingViewController.h */,
+				939879531FCD4B1A003CDB4E /* PLRTCSettingViewController.m */,
+				939879541FCD4B1A003CDB4E /* PLRTCSettingViewController.xib */,
+				939879661FCD50AF003CDB4E /* PLRTCMasterViewController.h */,
+				939879671FCD50AF003CDB4E /* PLRTCMasterViewController.m */,
+			);
+			path = PLRTCDemo;
+			sourceTree = "<group>";
+		};
+		F7013C7A1B7982C938FB040B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15A78882115E3C266FEF9EF3 /* Pods-PLRTCStreamingKitDemo.debug.xcconfig */,
+				8B512E4D21BC6C50B7D80025 /* Pods-PLRTCStreamingKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9398790D1FCD23B5003CDB4E /* PLRTCStreamingKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9398792F1FCD23B5003CDB4E /* Build configuration list for PBXNativeTarget "PLRTCStreamingKitDemo" */;
+			buildPhases = (
+				ABD06EAD180ED7F166946706 /* [CP] Check Pods Manifest.lock */,
+				9398790A1FCD23B5003CDB4E /* Sources */,
+				9398790B1FCD23B5003CDB4E /* Frameworks */,
+				9398790C1FCD23B5003CDB4E /* Resources */,
+				452426CEB3C55544C6C8BE99 /* [CP] Embed Pods Frameworks */,
+				AF22889C9E4908CCF42021C7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PLRTCStreamingKitDemo;
+			productName = PLRTCStreamingKitDemo;
+			productReference = 9398790E1FCD23B5003CDB4E /* PLRTCStreamingKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		939879251FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 939879321FCD23B5003CDB4E /* Build configuration list for PBXNativeTarget "PLRTCStreamingKitDemoUITests" */;
+			buildPhases = (
+				939879221FCD23B5003CDB4E /* Sources */,
+				939879231FCD23B5003CDB4E /* Frameworks */,
+				939879241FCD23B5003CDB4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				939879281FCD23B5003CDB4E /* PBXTargetDependency */,
+			);
+			name = PLRTCStreamingKitDemoUITests;
+			productName = PLRTCStreamingKitDemoUITests;
+			productReference = 939879261FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		939879061FCD23B5003CDB4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Aaron;
+				TargetAttributes = {
+					9398790D1FCD23B5003CDB4E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					939879251FCD23B5003CDB4E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9398790D1FCD23B5003CDB4E;
+					};
+				};
+			};
+			buildConfigurationList = 939879091FCD23B5003CDB4E /* Build configuration list for PBXProject "PLRTCStreamingKitDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 939879051FCD23B5003CDB4E;
+			productRefGroup = 9398790F1FCD23B5003CDB4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9398790D1FCD23B5003CDB4E /* PLRTCStreamingKitDemo */,
+				939879251FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9398790C1FCD23B5003CDB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				939879561FCD4B1A003CDB4E /* PLRTCSettingViewController.xib in Resources */,
+				939879451FCD4A22003CDB4E /* LoginViewController.xib in Resources */,
+				9398791E1FCD23B5003CDB4E /* LaunchScreen.storyboard in Resources */,
+				9398791B1FCD23B5003CDB4E /* Assets.xcassets in Resources */,
+				939879191FCD23B5003CDB4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		939879241FCD23B5003CDB4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		452426CEB3C55544C6C8BE99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLRTCStreamingKitDemo/Pods-PLRTCStreamingKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABD06EAD180ED7F166946706 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PLRTCStreamingKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF22889C9E4908CCF42021C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLRTCStreamingKitDemo/Pods-PLRTCStreamingKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9398790A1FCD23B5003CDB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				939879211FCD23B5003CDB4E /* main.m in Sources */,
+				9398794E1FCD4ADF003CDB4E /* PLRTCChiefViewController.m in Sources */,
+				939879491FCD4A22003CDB4E /* PLNavigationController.m in Sources */,
+				939879471FCD4A22003CDB4E /* AppServerBase.m in Sources */,
+				939879621FCD4BE8003CDB4E /* PLRTCStreamingSettingManager.m in Sources */,
+				9398796B1FCD50E8003CDB4E /* PLRTCStreamingMasterViewController.m in Sources */,
+				939879681FCD50AF003CDB4E /* PLRTCMasterViewController.m in Sources */,
+				939879131FCD23B5003CDB4E /* AppDelegate.m in Sources */,
+				9398795C1FCD4B5A003CDB4E /* PLRTCStreamingViewerViewController.m in Sources */,
+				939879461FCD4A22003CDB4E /* LoginViewController.m in Sources */,
+				939879551FCD4B1A003CDB4E /* PLRTCSettingViewController.m in Sources */,
+				939879481FCD4A22003CDB4E /* PLHomeViewController.m in Sources */,
+				9398795F1FCD4BB8003CDB4E /* PLRTCStreamingSettingView.m in Sources */,
+				939879591FCD4B47003CDB4E /* PLRTCStreamingChiefViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		939879221FCD23B5003CDB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9398792B1FCD23B5003CDB4E /* PLRTCStreamingKitDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		939879281FCD23B5003CDB4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9398790D1FCD23B5003CDB4E /* PLRTCStreamingKitDemo */;
+			targetProxy = 939879271FCD23B5003CDB4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		939879171FCD23B5003CDB4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				939879181FCD23B5003CDB4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9398791C1FCD23B5003CDB4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9398791D1FCD23B5003CDB4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9398792D1FCD23B5003CDB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9398792E1FCD23B5003CDB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		939879301FCD23B5003CDB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A78882115E3C266FEF9EF3 /* Pods-PLRTCStreamingKitDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2TP34G2MM;
+				INFOPLIST_FILE = PLRTCStreamingKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.PLRTCStreamingKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		939879311FCD23B5003CDB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B512E4D21BC6C50B7D80025 /* Pods-PLRTCStreamingKitDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2TP34G2MM;
+				INFOPLIST_FILE = PLRTCStreamingKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.PLRTCStreamingKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		939879331FCD23B5003CDB4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2TP34G2MM;
+				INFOPLIST_FILE = PLRTCStreamingKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.PLRTCStreamingKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PLRTCStreamingKitDemo;
+			};
+			name = Debug;
+		};
+		939879341FCD23B5003CDB4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2TP34G2MM;
+				INFOPLIST_FILE = PLRTCStreamingKitDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.PLRTCStreamingKitDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PLRTCStreamingKitDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		939879091FCD23B5003CDB4E /* Build configuration list for PBXProject "PLRTCStreamingKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9398792D1FCD23B5003CDB4E /* Debug */,
+				9398792E1FCD23B5003CDB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9398792F1FCD23B5003CDB4E /* Build configuration list for PBXNativeTarget "PLRTCStreamingKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939879301FCD23B5003CDB4E /* Debug */,
+				939879311FCD23B5003CDB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		939879321FCD23B5003CDB4E /* Build configuration list for PBXNativeTarget "PLRTCStreamingKitDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939879331FCD23B5003CDB4E /* Debug */,
+				939879341FCD23B5003CDB4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 939879061FCD23B5003CDB4E /* Project object */;
+}
