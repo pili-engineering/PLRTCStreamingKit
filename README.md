@@ -137,7 +137,7 @@ PLRTCStreamingKit 是七牛推出的一款适用于 iOS 平台的连麦互动 SD
 
 ### 6.3 如何从 v1 版本连麦更新到 v2 版本？
 
-可参考 [这个文档](https://github.com/pili-engineering/PLDroidRTCStreaming/blob/master/docs/how-to-upgrade-to-v2.md)
+可参考 [这个文档](https://github.com/pili-engineering/PLRTCStreamingKit/docs/how-to-upgrade-to-v2.md)
 
 ### 6.4 运行 demo 后的账号密码哪里来 ？
 
