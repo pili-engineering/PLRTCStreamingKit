@@ -449,7 +449,10 @@ typedef NS_ENUM(NSUInteger, PLRTCState) {
 };
 ```   
 
-### 接口删除  
+### 接口删除        
+
+#### 删除 PLCameraStreamingKit     
+
 #### PLMediaStreamingSession
 
 - 删除连麦视频的数据回调

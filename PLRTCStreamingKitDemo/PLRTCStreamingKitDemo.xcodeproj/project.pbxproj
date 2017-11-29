@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		026A640FFB85D91F3F04B72A /* libPods-PLRTCStreamingKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F81A4A659967EA5CFA27187 /* libPods-PLRTCStreamingKitDemo.a */; };
+		9337019B1FCECA4B0072D909 /* qiniuLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9337019A1FCECA4A0072D909 /* qiniuLogo.png */; };
 		939879131FCD23B5003CDB4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879121FCD23B5003CDB4E /* AppDelegate.m */; };
 		939879191FCD23B5003CDB4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939879171FCD23B5003CDB4E /* Main.storyboard */; };
 		9398791B1FCD23B5003CDB4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9398791A1FCD23B5003CDB4E /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		0F81A4A659967EA5CFA27187 /* libPods-PLRTCStreamingKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PLRTCStreamingKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15A78882115E3C266FEF9EF3 /* Pods-PLRTCStreamingKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLRTCStreamingKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLRTCStreamingKitDemo/Pods-PLRTCStreamingKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8B512E4D21BC6C50B7D80025 /* Pods-PLRTCStreamingKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLRTCStreamingKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PLRTCStreamingKitDemo/Pods-PLRTCStreamingKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9337019A1FCECA4A0072D909 /* qiniuLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qiniuLogo.png; sourceTree = "<group>"; };
 		9398790E1FCD23B5003CDB4E /* PLRTCStreamingKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLRTCStreamingKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939879111FCD23B5003CDB4E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		939879121FCD23B5003CDB4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				939879171FCD23B5003CDB4E /* Main.storyboard */,
 				9398791A1FCD23B5003CDB4E /* Assets.xcassets */,
 				9398791C1FCD23B5003CDB4E /* LaunchScreen.storyboard */,
+				9337019A1FCECA4A0072D909 /* qiniuLogo.png */,
 				9398791F1FCD23B5003CDB4E /* Info.plist */,
 				939879201FCD23B5003CDB4E /* main.m */,
 			);
@@ -294,6 +297,7 @@
 				9398791E1FCD23B5003CDB4E /* LaunchScreen.storyboard in Resources */,
 				9398791B1FCD23B5003CDB4E /* Assets.xcassets in Resources */,
 				939879191FCD23B5003CDB4E /* Main.storyboard in Resources */,
+				9337019B1FCECA4B0072D909 /* qiniuLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

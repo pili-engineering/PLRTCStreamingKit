@@ -11,7 +11,6 @@
 
 #import "PLCommon.h"
 #import "PLStreamingKit.h"
-#import "PLCameraStreamingKit.h"
 #import "PLRTCStreamingKit.h"
 #import "PLMediaStreamingSession.h"
 

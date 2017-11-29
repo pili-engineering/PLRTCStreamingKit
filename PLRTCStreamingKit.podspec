@@ -26,35 +26,9 @@ Pod::Spec.new do |s|
   s.dependency 'QNNetDiag', '0.0.6'
   s.frameworks = ['UIKit', 'AVFoundation', 'CoreGraphics', 'CFNetwork', 'AudioToolbox', 'CoreMedia', 'VideoToolbox']
   s.libraries = 'z', 'c++', 'icucore', 'sqlite3'
+  
+  s.public_header_files = "Pod/Library/include/**/*.h"
+  s.source_files = 'Pod/Library/include/**/*.[h|m]'
   s.vendored_libraries = 'Pod/Library/*.a'
 
-  s.subspec "PLCameraStreamingKit" do |ss1|
-    ss1.public_header_files = 'Pod/Library/include/PLCameraStreamingKit/*.h'
-    ss1.source_files = 'Pod/Library/include/PLCameraStreamingKit/*.h'
-  end
-
-  s.subspec "PLStreamingKit" do |ss2|
-    ss2.public_header_files = 'Pod/Library/include/PLStreamingKit/*.h'
-    ss2.source_files = 'Pod/Library/include/PLStreamingKit/*.h'
-   end
-
-  s.subspec "PLRTCStreamingKit" do |ss3|
-    ss3.public_header_files = 'Pod/Library/include/PLRTCStreamingKit/*.h'
-    ss3.source_files = 'Pod/Library/include/PLRTCStreamingKit/*.h'
-  end
-
-  s.subspec "PLMediaStreamingKit" do |ss4|
-    ss4.public_header_files = 'Pod/Library/include/PLMediaStreamingKit/*.h'
-    ss4.source_files = 'Pod/Library/include/PLMediaStreamingKit/*.h'
-  end
-
-  s.subspec "Common" do |ss5|
-    ss5.public_header_files = 'Pod/Library/include/Common/*.h'
-    ss5.source_files = 'Pod/Library/include/Common/*.h'
-  end
-
-  s.subspec "PLRTCKit" do |ss5|
-    ss5.public_header_files = 'Pod/Library/include/PLRTCKit/*.h'
-    ss5.source_files = 'Pod/Library/include/PLRTCKit/*.h'
-  end
 end

@@ -232,7 +232,7 @@ static const CGSize videoSizeMap[] = {
         [self.session setBeautifyModeOn:YES];
     }
     self.session.delegate = self;
-    
+    NSLog(@"PLMediaStreamingSession versionInfo :%@",[PLMediaStreamingSession versionInfo]);
     [AppServerBase getPublishAddrWithRoomname:self.roomName completed:^(NSError *error, NSString *urlString) {
         if (error) {
             [self showAlertWithMessage:[NSString stringWithFormat:@"Demo request streamJson failed, error: %@", error] completion:^{

@@ -119,24 +119,27 @@
 		00E865810FC6B8BBB3C5BF06CB70C4D1 /* log.c */ = {isa = PBXFileReference; includeInIndex = 1; name = log.c; path = "Pod/Classes/pili-librtmp/log.c"; sourceTree = "<group>"; };
 		03D218AC7977D20F489FE585505F8082 /* QNDnsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNDnsManager.h; path = HappyDNS/Common/QNDnsManager.h; sourceTree = "<group>"; };
 		05E9CABE1B53A02AC9C4EF0A269EF0C9 /* QNDomain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNDomain.h; path = HappyDNS/Common/QNDomain.h; sourceTree = "<group>"; };
+		0757CA97E175DC6AB0C88736381F7DAD /* PLTypeDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLTypeDefines.h; sourceTree = "<group>"; };
 		0833EC87F41BE4AAF75C11E6B272DBA6 /* QNTxtResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNTxtResolver.m; path = HappyDNS/Local/QNTxtResolver.m; sourceTree = "<group>"; };
 		08BBDD74F4B9427F0C94F16D149B8AFC /* QNNPing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNNPing.m; path = NetDiag/QNNPing.m; sourceTree = "<group>"; };
 		08C6B1F23DCD92DD162DD1BD4F71EAEA /* PLPlayerKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLPlayerKit.h; path = Pod/Library/include/PLPlayerKit/PLPlayerKit.h; sourceTree = "<group>"; };
 		0A27142E3EDB9204B96BD81314B8013D /* libPods-PLRTCStreamingKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PLRTCStreamingKitDemo.a"; path = "libPods-PLRTCStreamingKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF203647F8AC910E5A8598C12C28CB1 /* QNRefresher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNRefresher.h; path = HappyDNS/QNRefresher.h; sourceTree = "<group>"; };
 		0CBEAD982A159CDCF827889A4CDE7982 /* QNRefresher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNRefresher.m; path = HappyDNS/QNRefresher.m; sourceTree = "<group>"; };
-		0E3FF2D8618033BC0588D4C857014E23 /* PLCameraStreamingKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCameraStreamingKit.h; path = Pod/Library/include/PLCameraStreamingKit/PLCameraStreamingKit.h; sourceTree = "<group>"; };
+		11ED3EAB4790EE5E6D7141B990AE0ED8 /* PLAudioEffectConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLAudioEffectConfiguration.h; sourceTree = "<group>"; };
 		126B9AB9A4A60B48B226FEEF96F63963 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = Pod/Library/lib/libssl.a; sourceTree = "<group>"; };
 		14142C0CAE7BF1BC268B8B206CA33F0F /* QNDnsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNDnsManager.m; path = HappyDNS/Common/QNDnsManager.m; sourceTree = "<group>"; };
 		14319D6A1F05314BC878C09518A25690 /* QNHosts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNHosts.m; path = HappyDNS/Local/QNHosts.m; sourceTree = "<group>"; };
 		17119F7FAFEE70833DEF1A51BDF602A4 /* libspeex.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libspeex.a; path = Pod/Library/lib/libspeex.a; sourceTree = "<group>"; };
+		188D82DB4A1E25600CE2C4866C724CE7 /* PLRTCStreamingSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLRTCStreamingSession.h; sourceTree = "<group>"; };
 		1CA4F42AAA5AC3E3B7EEAD5A266FB443 /* QNNPing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNPing.h; path = NetDiag/QNNPing.h; sourceTree = "<group>"; };
 		1D9FBFB2931C00A7080C76754599FFB0 /* libavcodec.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libavcodec.a; path = Pod/Library/lib/libavcodec.a; sourceTree = "<group>"; };
-		1DDB5325A1BD53A6F05C749950693DB4 /* PLAudioEffectCustomConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLAudioEffectCustomConfiguration.h; path = Pod/Library/include/Common/PLAudioEffectCustomConfiguration.h; sourceTree = "<group>"; };
 		1F11A9D8D888E292070FF8636094780E /* QNNUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNUtil.h; path = NetDiag/QNNUtil.h; sourceTree = "<group>"; };
 		21D7BC9B4790428FA6C3B37CF51DBEB9 /* QNLruCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNLruCache.h; path = HappyDNS/Common/QNLruCache.h; sourceTree = "<group>"; };
 		21EAE28D6DB049C30B2CA7148EFA3AC3 /* QNLruCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNLruCache.m; path = HappyDNS/Common/QNLruCache.m; sourceTree = "<group>"; };
+		2823CDFB1A1D060661BBFB58132ED2FD /* PLAudioCaptureConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLAudioCaptureConfiguration.h; sourceTree = "<group>"; };
 		29D38A0DC7753DC7E18CD3E19258E1E8 /* HappyDNS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HappyDNS-dummy.m"; sourceTree = "<group>"; };
+		2A9E5D32C3A57FFEC3A6BFC7F8EEA72A /* libPLMediaStreamingKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libPLMediaStreamingKit.a; path = Pod/Library/libPLMediaStreamingKit.a; sourceTree = "<group>"; };
 		2D7D8E1A5F5F274377151A325F7AD41A /* QNNUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNNUtil.m; path = NetDiag/QNNUtil.m; sourceTree = "<group>"; };
 		2F1E644D16D5F824C383F4CA80F7861E /* QNNRtmp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNNRtmp.m; path = NetDiag/QNNRtmp.m; sourceTree = "<group>"; };
 		30C5B4D8A5E87F6E524FD3DD4210D230 /* QNNTraceRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNNTraceRoute.m; path = NetDiag/QNNTraceRoute.m; sourceTree = "<group>"; };
@@ -145,15 +148,13 @@
 		41BBA60331D0006E6C9C052591BEFEAF /* Pods-PLRTCStreamingKitDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PLRTCStreamingKitDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		420918F0A7E885090DCAA6DC8B2E7C59 /* Pods-PLRTCStreamingKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLRTCStreamingKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4342E83F493B660F59AAAD8E8141BF4D /* QNResolverDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNResolverDelegate.h; path = HappyDNS/Common/QNResolverDelegate.h; sourceTree = "<group>"; };
-		4A0D9DD61F781CA5EED65434E132F7FF /* PLStreamStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLStreamStatus.h; path = Pod/Library/include/Common/PLStreamStatus.h; sourceTree = "<group>"; };
 		4A9D6FDBC76557904E0F6FCE77B8F804 /* QNDes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNDes.h; path = HappyDNS/Util/QNDes.h; sourceTree = "<group>"; };
-		4DB3CD82891CE0B90BC7CD38CE8418F4 /* PLCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCommon.h; path = Pod/Library/include/Common/PLCommon.h; sourceTree = "<group>"; };
 		4E212835A2AFF621BA2974FCB950C1D8 /* pili-librtmp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "pili-librtmp-dummy.m"; sourceTree = "<group>"; };
 		4E3030A6AA051385D2DB08867264388C /* QNGetAddrInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNGetAddrInfo.h; path = HappyDNS/Util/QNGetAddrInfo.h; sourceTree = "<group>"; };
-		4EAEAF9B0ABD7613CDE14A1F1E7A9F88 /* PLStreamingEnv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLStreamingEnv.h; path = Pod/Library/include/PLStreamingKit/PLStreamingEnv.h; sourceTree = "<group>"; };
 		4EFEF8F618EA79E46F36FCE5FF3D1AF4 /* libPLPlayerKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libPLPlayerKit.a; path = Pod/Library/lib/libPLPlayerKit.a; sourceTree = "<group>"; };
 		4FC87B0C9B2968F59D8D3F48BD2F713D /* QNHosts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNHosts.h; path = HappyDNS/Local/QNHosts.h; sourceTree = "<group>"; };
 		51E5019AA64290D9C402953A3EA78D68 /* Pods-PLRTCStreamingKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PLRTCStreamingKitDemo-dummy.m"; sourceTree = "<group>"; };
+		53AF08D52806BE0E0F1E5523D3D28F1D /* PLVideoCompositionDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLVideoCompositionDescription.h; sourceTree = "<group>"; };
 		55479CCB6000FF3C34CC45C58E8B3347 /* QNDnspodFree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNDnspodFree.m; path = HappyDNS/Http/QNDnspodFree.m; sourceTree = "<group>"; };
 		55D0E68A62248F62097106B8FAE7B0D7 /* QNNHttp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNNHttp.m; path = NetDiag/QNNHttp.m; sourceTree = "<group>"; };
 		568B1FCAA863E04B5D6D9F8DF6208E77 /* pili-librtmp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "pili-librtmp.xcconfig"; sourceTree = "<group>"; };
@@ -162,59 +163,55 @@
 		5EC8FA3A52F07056C3F0B03F148B8319 /* QNDnspodEnterprise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNDnspodEnterprise.h; path = HappyDNS/Http/QNDnspodEnterprise.h; sourceTree = "<group>"; };
 		5EFDEADBA150EC2912D606A738304245 /* QNGetAddrInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNGetAddrInfo.m; path = HappyDNS/Util/QNGetAddrInfo.m; sourceTree = "<group>"; };
 		618F9F2B5C0F7BFA4A3AA9577825E8B5 /* QNNProtocols.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNProtocols.h; path = NetDiag/QNNProtocols.h; sourceTree = "<group>"; };
+		61BB16B72427802BC86A9BE0E3F47297 /* PLVideoCaptureConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLVideoCaptureConfiguration.h; sourceTree = "<group>"; };
 		625EFB9AD8734C49ADA6B1C341C38DBA /* QNIpModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNIpModel.h; path = HappyDNS/Assessment/QNIpModel.h; sourceTree = "<group>"; };
-		63F1680BB8DB3F3BC4CF78BD48245E70 /* libfdk-aac.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libfdk-aac.a"; path = "Pod/Library/libfdk-aac.a"; sourceTree = "<group>"; };
 		651A72EF65F8198E2DBCE76D632DA9FB /* QNAssessment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNAssessment.h; path = HappyDNS/Assessment/QNAssessment.h; sourceTree = "<group>"; };
-		6582C757E863B6D5D33B8AD723E36528 /* libPLMediaStreamingKit.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libPLMediaStreamingKit.a; path = Pod/Library/libPLMediaStreamingKit.a; sourceTree = "<group>"; };
+		65E2645088AB486AEEFF7912EA47106B /* PLMediaStreamingSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLMediaStreamingSession.h; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		667854BA2413E8C6A3AC55AF040E1429 /* http.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = http.h; path = "Pod/Classes/pili-librtmp/http.h"; sourceTree = "<group>"; };
 		692B72C1796CA06325EE9861E28A0422 /* QNNRtmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNRtmp.h; path = NetDiag/QNNRtmp.h; sourceTree = "<group>"; };
 		695D2C520E93C203CB2F3449CB8F1529 /* QNNetDiag-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QNNetDiag-prefix.pch"; sourceTree = "<group>"; };
-		6A041B2327C28BB62D5F395966A71BC6 /* PLAudioStreamingConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLAudioStreamingConfiguration.h; path = Pod/Library/include/Common/PLAudioStreamingConfiguration.h; sourceTree = "<group>"; };
-		6A4F90F77FB59F9A361497EA150CB446 /* PLAudioSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLAudioSession.h; path = Pod/Library/include/Common/PLAudioSession.h; sourceTree = "<group>"; };
 		6C3568967EFA6D0842887EE2EE62E9BF /* error.c */ = {isa = PBXFileReference; includeInIndex = 1; name = error.c; path = "Pod/Classes/pili-librtmp/error.c"; sourceTree = "<group>"; };
+		6F4A32DB0DCF508D340EF0505164418D /* PLStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLStream.h; sourceTree = "<group>"; };
 		6FA4516E6EF82088CC88A68CFEB4B343 /* HappyDNS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HappyDNS.h; path = HappyDNS/HappyDNS.h; sourceTree = "<group>"; };
 		6FD15C155C60E2749E4E393453A73A5B /* QNHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNHex.m; path = HappyDNS/Util/QNHex.m; sourceTree = "<group>"; };
 		70D5C42C72CBDC2325966CDB5EB4E62D /* QNRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNRecord.h; path = HappyDNS/Common/QNRecord.h; sourceTree = "<group>"; };
 		71A7A67FC99621FCBBF23467016699B8 /* QNNTraceRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNTraceRoute.h; path = NetDiag/QNNTraceRoute.h; sourceTree = "<group>"; };
 		723D7E926FABFB49A35C85A80839B227 /* QNNTcpPing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNNTcpPing.m; path = NetDiag/QNNTcpPing.m; sourceTree = "<group>"; };
-		7346E444963350AFDDEC3A8A1D814F79 /* PLRTCConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLRTCConfiguration.h; path = Pod/Library/include/Common/PLRTCConfiguration.h; sourceTree = "<group>"; };
 		745AF16696E45A863017FDE3D18D58F9 /* QNHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNHex.h; path = HappyDNS/Util/QNHex.h; sourceTree = "<group>"; };
+		74D1B7DA75CF958A7F7737A16AC0DDD9 /* PLStreamingEnv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLStreamingEnv.h; sourceTree = "<group>"; };
 		74F8C0C30F3CF2172DB59DDA0D1B8972 /* libQNNetDiag.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libQNNetDiag.a; path = libQNNetDiag.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7538BCA26EF4E4327CDD064E70F88EC3 /* QNDnspodEnterprise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNDnspodEnterprise.m; path = HappyDNS/Http/QNDnspodEnterprise.m; sourceTree = "<group>"; };
-		75C100472AA4918BC5767BEB1E52EF03 /* PLRTCStreamingKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLRTCStreamingKit.h; path = Pod/Library/include/PLRTCStreamingKit/PLRTCStreamingKit.h; sourceTree = "<group>"; };
 		7705C7A8EA3FFD6897373D2C4976FF03 /* QNNQue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNQue.h; path = NetDiag/QNNQue.h; sourceTree = "<group>"; };
-		782427102BF3F748B120A57DC0E1AD12 /* PLStreamingKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLStreamingKit.h; path = Pod/Library/include/PLStreamingKit/PLStreamingKit.h; sourceTree = "<group>"; };
+		7822731F426416AA5B99E83D94F9CE8F /* PLAudioStreamingConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLAudioStreamingConfiguration.h; sourceTree = "<group>"; };
+		7BCE431763B773F867FFF6DC47A75874 /* PLStreamStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLStreamStatus.h; sourceTree = "<group>"; };
 		7C2B4FE6C48E10203F49319A92D6700B /* rtmp.c */ = {isa = PBXFileReference; includeInIndex = 1; name = rtmp.c; path = "Pod/Classes/pili-librtmp/rtmp.c"; sourceTree = "<group>"; };
+		7CB61C6D50EF3E1185968C406F1C4B49 /* libfdk-aac.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libfdk-aac.a"; path = "Pod/Library/libfdk-aac.a"; sourceTree = "<group>"; };
 		7D9B8370907C351C5952C57919490FEA /* QNResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNResolver.m; path = HappyDNS/Local/QNResolver.m; sourceTree = "<group>"; };
 		7F009A4C57908E16FD431AEAB5EE9C99 /* QNDes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNDes.m; path = HappyDNS/Util/QNDes.m; sourceTree = "<group>"; };
 		7F2AD51228EB0BCA0317BB26858FA8FD /* PLPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLPlayer.h; path = Pod/Library/include/PLPlayerKit/PLPlayer.h; sourceTree = "<group>"; };
 		7FA18ACD5803B8368288D71339FE13EA /* Pods-PLRTCStreamingKitDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PLRTCStreamingKitDemo-frameworks.sh"; sourceTree = "<group>"; };
-		7FEE80BC9B35B05A2B49FDC4917D1378 /* PLTypeDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLTypeDefines.h; path = Pod/Library/include/Common/PLTypeDefines.h; sourceTree = "<group>"; };
+		80A65BDEFA7FAF2D9D35627EDA754829 /* PLRTCConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLRTCConfiguration.h; sourceTree = "<group>"; };
 		837C77F6338A6B8730260DEF3B3B38C2 /* libavformat.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libavformat.a; path = Pod/Library/lib/libavformat.a; sourceTree = "<group>"; };
-		86684DD366BECEF33A84A181C7884DA6 /* PLAudioEffectConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLAudioEffectConfiguration.h; path = Pod/Library/include/Common/PLAudioEffectConfiguration.h; sourceTree = "<group>"; };
-		86FA0AC6BE66FFEF91BA36FE77DEE32B /* PLRGBtoI420Processor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLRGBtoI420Processor.h; path = Pod/Library/include/Common/PLRGBtoI420Processor.h; sourceTree = "<group>"; };
 		8AF347FCC7F55DAF68B59BFE4F368229 /* Pods-PLRTCStreamingKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PLRTCStreamingKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8EDBABDEB373E76970408B7FEA509E24 /* PLStreamingKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLStreamingKit.h; sourceTree = "<group>"; };
 		9223A1FE1B89F5A178D0B0D5F4FA15C6 /* Pods-PLRTCStreamingKitDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PLRTCStreamingKitDemo-resources.sh"; sourceTree = "<group>"; };
-		923E259152FA5D7F9CF76B871CE683C2 /* PLStreamingSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLStreamingSession.h; path = Pod/Library/include/PLStreamingKit/PLStreamingSession.h; sourceTree = "<group>"; };
 		93060679E056661411AAEEE3DE3DAD3A /* QNNNslookup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNNslookup.h; path = NetDiag/QNNNslookup.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		947938A7A459F17BDB37FA0573044836 /* PLStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLStream.h; path = Pod/Library/include/Common/PLStream.h; sourceTree = "<group>"; };
 		94B1584E04F229C617B8783CC34FCBF7 /* amf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = amf.h; path = "Pod/Classes/pili-librtmp/amf.h"; sourceTree = "<group>"; };
 		95A5A4C22CBB883C01E7E80DAFBA1C47 /* pili-librtmp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pili-librtmp-prefix.pch"; sourceTree = "<group>"; };
 		979559EB4F15F0DFBD6F55E45A313D8A /* libavutil.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libavutil.a; path = Pod/Library/lib/libavutil.a; sourceTree = "<group>"; };
 		9AE67AC90A805EAFDAEF0262B53605C0 /* QNIP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNIP.m; path = HappyDNS/Util/QNIP.m; sourceTree = "<group>"; };
 		9B41D4E57D3512A4DB77FAB7B648FE2E /* QNNetworkInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNNetworkInfo.m; path = HappyDNS/Common/QNNetworkInfo.m; sourceTree = "<group>"; };
 		9F58BCE515FF88A5F858E4A748D64E45 /* parseurl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = parseurl.c; path = "Pod/Classes/pili-librtmp/parseurl.c"; sourceTree = "<group>"; };
-		A2753C48102D9EAC5FC336B75A1F45F0 /* PLRTCVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLRTCVideoView.h; path = Pod/Library/include/Common/PLRTCVideoView.h; sourceTree = "<group>"; };
+		A230087299BF481D10163990F0C30433 /* PLCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLCommon.h; sourceTree = "<group>"; };
+		A451E335FFE0891A23E4C89777FC72B9 /* PLAudioSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLAudioSession.h; sourceTree = "<group>"; };
 		A4531BF754BEFBB65C926E9FBE91749D /* QNNTcpPing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNTcpPing.h; path = NetDiag/QNNTcpPing.h; sourceTree = "<group>"; };
-		A4EDA80B2CAC9751568F5EF154586D0C /* PLRTCStreamingSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLRTCStreamingSession.h; path = Pod/Library/include/PLRTCStreamingKit/PLRTCStreamingSession.h; sourceTree = "<group>"; };
+		A498C34242EEFA0D968052AEC71F7153 /* PLStreamingSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLStreamingSession.h; sourceTree = "<group>"; };
 		A9215309CAB0D39B02A85BC98CD3AE19 /* QNHijackingDetectWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNHijackingDetectWrapper.h; path = HappyDNS/Local/QNHijackingDetectWrapper.h; sourceTree = "<group>"; };
 		AA735D707DDFBC237CDB907DEB532258 /* QNNExternalIp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNNExternalIp.m; path = NetDiag/QNNExternalIp.m; sourceTree = "<group>"; };
-		AA8D0868F2131FDC0FE50EF163764406 /* PLCameraStreamingSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLCameraStreamingSession.h; path = Pod/Library/include/PLCameraStreamingKit/PLCameraStreamingSession.h; sourceTree = "<group>"; };
 		AD8F553181AC306539D350F453D22665 /* QNNetDiag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNetDiag.h; path = NetDiag/QNNetDiag.h; sourceTree = "<group>"; };
 		AE6CACA72EAD566651DAE11D5EE4C759 /* QNIpModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNIpModel.m; path = HappyDNS/Assessment/QNIpModel.m; sourceTree = "<group>"; };
-		AF12E39E1B4C788B9A6174C18BBB9272 /* PLVideoCompositionDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLVideoCompositionDescription.h; path = Pod/Library/include/Common/PLVideoCompositionDescription.h; sourceTree = "<group>"; };
 		AFC82DCC8C7F082A3FAFA8E43DD83832 /* bytes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bytes.h; path = "Pod/Classes/pili-librtmp/bytes.h"; sourceTree = "<group>"; };
 		B23077229A8529B0728A14206F782E88 /* QNDomain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNDomain.m; path = HappyDNS/Common/QNDomain.m; sourceTree = "<group>"; };
 		B4CB28DFD59FB944FF6E565831C098D5 /* PLPlayerError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLPlayerError.h; path = Pod/Library/include/PLPlayerKit/PLPlayerError.h; sourceTree = "<group>"; };
@@ -222,24 +219,24 @@
 		BA3E0975037A2E79CEB3888A5BEAAD3C /* QNHijackingDetectWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNHijackingDetectWrapper.m; path = HappyDNS/Local/QNHijackingDetectWrapper.m; sourceTree = "<group>"; };
 		BA7F0A40C30883736938CA8FF6597A50 /* libswresample.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libswresample.a; path = Pod/Library/lib/libswresample.a; sourceTree = "<group>"; };
 		BC02847B1EAD9A12A86813346DC9ABAC /* QNNExternalIp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNExternalIp.h; path = NetDiag/QNNExternalIp.h; sourceTree = "<group>"; };
-		BD9905B5C7C7D93CA123581BC78CC835 /* PLRTCVideoRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLRTCVideoRender.h; path = Pod/Library/include/Common/PLRTCVideoRender.h; sourceTree = "<group>"; };
-		C146AE0324056F80DCB780C0B378137E /* PLPixelBufferProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLPixelBufferProcessor.h; path = Pod/Library/include/Common/PLPixelBufferProcessor.h; sourceTree = "<group>"; };
+		BFC24649D765B438FF963ADF37288D04 /* PLRTCStreamingKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLRTCStreamingKit.h; sourceTree = "<group>"; };
 		C22F96AFEB42BF9C7010588BA8C7DF82 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = Pod/Library/lib/libcrypto.a; sourceTree = "<group>"; };
+		C4079AEEF8951112CD9AA7B62F876012 /* PLPixelBufferProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLPixelBufferProcessor.h; sourceTree = "<group>"; };
 		C42CB8300AD47F64BFAE99C078A3340C /* QNDnspodFree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNDnspodFree.h; path = HappyDNS/Http/QNDnspodFree.h; sourceTree = "<group>"; };
+		C56B8425C707597D3DFC1A239245F994 /* PLVideoStreamingConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLVideoStreamingConfiguration.h; sourceTree = "<group>"; };
 		C56E7CD42E719405666E01F11218BB50 /* QNNQue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNNQue.m; path = NetDiag/QNNQue.m; sourceTree = "<group>"; };
+		C7EDCC34A12AEA7C82B02A58517FB79E /* PLRGBtoI420Processor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLRGBtoI420Processor.h; sourceTree = "<group>"; };
 		CB9286171D8268BD0A5D618331A6DBB2 /* QNNNslookup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNNNslookup.m; path = NetDiag/QNNNslookup.m; sourceTree = "<group>"; };
+		CC8DCB3AC7D4ADB246B60CE767D2306F /* PLRTCVideoRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLRTCVideoRender.h; sourceTree = "<group>"; };
 		CD7017CBF63EA84A44D53CD8D308956E /* QNNetDiag-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QNNetDiag-dummy.m"; sourceTree = "<group>"; };
-		CD84AC5C5020DE1E12C819EE73EA181E /* PLMediaStreamingSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLMediaStreamingSession.h; path = Pod/Library/include/PLMediaStreamingKit/PLMediaStreamingSession.h; sourceTree = "<group>"; };
 		CDBC53517F6188AEDADAD731DBE5622E /* QNResolvUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNResolvUtil.h; path = HappyDNS/Local/QNResolvUtil.h; sourceTree = "<group>"; };
 		CE897B60D0844DF09EDA54F821C00D52 /* QNNetworkInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNetworkInfo.h; path = HappyDNS/Common/QNNetworkInfo.h; sourceTree = "<group>"; };
-		CFF0F02E872CBD6C914779CAFC9F0F15 /* PLAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLAudioPlayer.h; path = Pod/Library/include/Common/PLAudioPlayer.h; sourceTree = "<group>"; };
 		D14FC54D827E6FF71EDB126AF1B0EAA7 /* libHappyDNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHappyDNS.a; path = libHappyDNS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D189681C34494C83AE7767879BDDC04F /* PLPixelBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLPixelBuffer.h; sourceTree = "<group>"; };
 		D2A8FC37C6DD250FFFE602685D0939F2 /* QNResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNResolver.h; path = HappyDNS/Local/QNResolver.h; sourceTree = "<group>"; };
-		D573040561C9D8BE8618009F8A753B1A /* PLMediaStreamingKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLMediaStreamingKit.h; path = Pod/Library/include/PLMediaStreamingKit/PLMediaStreamingKit.h; sourceTree = "<group>"; };
 		D67C796BCE2F589F006FB37FE71DEB4B /* QNAssessment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNAssessment.m; path = HappyDNS/Assessment/QNAssessment.m; sourceTree = "<group>"; };
 		DAA2E3CF7BAAAB110D9EC034A85909ED /* HappyDNS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HappyDNS-prefix.pch"; sourceTree = "<group>"; };
-		DCD7A38989D52CE08ACF626CA0A0F7B1 /* PLAudioCaptureConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLAudioCaptureConfiguration.h; path = Pod/Library/include/Common/PLAudioCaptureConfiguration.h; sourceTree = "<group>"; };
-		E18602F9FB6C69A9A442AB93EA8B7014 /* PLBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLBuffer.h; path = Pod/Library/include/Common/PLBuffer.h; sourceTree = "<group>"; };
+		DFB5DE14FDB623E554C07613937DCADC /* PLAudioEffectCustomConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLAudioEffectCustomConfiguration.h; sourceTree = "<group>"; };
 		E24DACDD7F497220DD3A43C9D9EA1ABD /* QNResolvUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNResolvUtil.m; path = HappyDNS/Local/QNResolvUtil.m; sourceTree = "<group>"; };
 		E3F2AF72ECC400342B77535AE8216A19 /* rtmp_sys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rtmp_sys.h; path = "Pod/Classes/pili-librtmp/rtmp_sys.h"; sourceTree = "<group>"; };
 		E44AF546D1FE7F2E0C2A3B5373A1EE8F /* QNTxtResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNTxtResolver.h; path = HappyDNS/Local/QNTxtResolver.h; sourceTree = "<group>"; };
@@ -248,14 +245,15 @@
 		E6C5397DCA50D38D119E70ED1E8F8E76 /* HappyDNS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HappyDNS.xcconfig; sourceTree = "<group>"; };
 		E6D5EF488BBCD5138C200DD8E2364C2A /* PLPlayerOption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLPlayerOption.h; path = Pod/Library/include/PLPlayerKit/PLPlayerOption.h; sourceTree = "<group>"; };
 		EB153202A995F4DB02109E9326079B9C /* log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log.h; path = "Pod/Classes/pili-librtmp/log.h"; sourceTree = "<group>"; };
-		F3933A3F3E8C2A71B8EF5BE143F769DF /* PLRTCSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLRTCSession.h; path = Pod/Library/include/PLRTCKit/PLRTCSession.h; sourceTree = "<group>"; };
+		ECE5F3E285A96863D12E461B12E4EE98 /* PLMediaStreamingKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLMediaStreamingKit.h; sourceTree = "<group>"; };
+		ECE7E34587DADD7B70D7EF7B16CF9F95 /* PLRTCSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLRTCSession.h; sourceTree = "<group>"; };
+		ED3FDD86A00313275480E8E21DE861FF /* PLRTCVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLRTCVideoView.h; sourceTree = "<group>"; };
+		EF01A22DDEDE16E2089FC5006F8A4F34 /* PLAudioPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLAudioPlayer.h; sourceTree = "<group>"; };
+		F0FA03CFE8189A98BEC58AD0321E18A5 /* PLBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PLBuffer.h; sourceTree = "<group>"; };
 		F42A2DDD8978B1B577CE568DB19A5081 /* QNRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNRecord.m; path = HappyDNS/Common/QNRecord.m; sourceTree = "<group>"; };
-		F4D693DC8F16A4C7C0269D5CA6E68E43 /* PLPixelBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLPixelBuffer.h; path = Pod/Library/include/Common/PLPixelBuffer.h; sourceTree = "<group>"; };
-		F67893EC0E0B7BF05F62B391FEBD6038 /* PLVideoStreamingConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLVideoStreamingConfiguration.h; path = Pod/Library/include/Common/PLVideoStreamingConfiguration.h; sourceTree = "<group>"; };
 		FB5EAD5739404B48A3571AF0A16A3C13 /* rtmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rtmp.h; path = "Pod/Classes/pili-librtmp/rtmp.h"; sourceTree = "<group>"; };
 		FC58733CD1E1878B2E9BD66CA9FB31BD /* QNNHttp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNNHttp.h; path = NetDiag/QNNHttp.h; sourceTree = "<group>"; };
 		FC7087C5B5604D64BDAE34558A67E166 /* Pods-PLRTCStreamingKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PLRTCStreamingKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FD380AF8AA27A6C682C12769A3323F11 /* PLVideoCaptureConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PLVideoCaptureConfiguration.h; path = Pod/Library/include/Common/PLVideoCaptureConfiguration.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,40 +303,14 @@
 			path = "../Target Support Files/pili-librtmp";
 			sourceTree = "<group>";
 		};
-		0CC8D65BBEBEDF0005EFF3B159062C41 /* PLRTCStreamingKit */ = {
+		124FFA2E3B68CF8A025D7D3062AC6412 /* PLRTCStreamingKit */ = {
 			isa = PBXGroup;
 			children = (
-				75C100472AA4918BC5767BEB1E52EF03 /* PLRTCStreamingKit.h */,
-				A4EDA80B2CAC9751568F5EF154586D0C /* PLRTCStreamingSession.h */,
+				BFC24649D765B438FF963ADF37288D04 /* PLRTCStreamingKit.h */,
+				188D82DB4A1E25600CE2C4866C724CE7 /* PLRTCStreamingSession.h */,
 			);
 			name = PLRTCStreamingKit;
-			sourceTree = "<group>";
-		};
-		1315D7320DAD3A913AAFDD9C983FD99F /* PLCameraStreamingKit */ = {
-			isa = PBXGroup;
-			children = (
-				0E3FF2D8618033BC0588D4C857014E23 /* PLCameraStreamingKit.h */,
-				AA8D0868F2131FDC0FE50EF163764406 /* PLCameraStreamingSession.h */,
-			);
-			name = PLCameraStreamingKit;
-			sourceTree = "<group>";
-		};
-		176A3D14D7854B19319055440DA7AC4D /* PLStreamingKit */ = {
-			isa = PBXGroup;
-			children = (
-				4EAEAF9B0ABD7613CDE14A1F1E7A9F88 /* PLStreamingEnv.h */,
-				782427102BF3F748B120A57DC0E1AD12 /* PLStreamingKit.h */,
-				923E259152FA5D7F9CF76B871CE683C2 /* PLStreamingSession.h */,
-			);
-			name = PLStreamingKit;
-			sourceTree = "<group>";
-		};
-		1DF0ADF46C342B5A20251412C0BA2D9B /* PLRTCKit */ = {
-			isa = PBXGroup;
-			children = (
-				F3933A3F3E8C2A71B8EF5BE143F769DF /* PLRTCSession.h */,
-			);
-			name = PLRTCKit;
+			path = Pod/Library/include/PLRTCStreamingKit;
 			sourceTree = "<group>";
 		};
 		3306125F842F270E54B637E33F8A664B /* Support Files */ = {
@@ -367,6 +339,14 @@
 			path = "Target Support Files/Pods-PLRTCStreamingKitDemo";
 			sourceTree = "<group>";
 		};
+		4251E1921279B0D2B94F8C1607ABD039 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EF62070464DC0AC61565150FC131608 /* PLRTCStreamingKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		4F957720C630530AE90DA0DEE804B5D5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,42 +358,41 @@
 			path = "../Target Support Files/QNNetDiag";
 			sourceTree = "<group>";
 		};
-		5C4E0C06A2D1A00F6C996404E4E6DCB9 /* Frameworks */ = {
+		60B23762024CD21684065741168C1812 /* PLStreamingKit */ = {
 			isa = PBXGroup;
 			children = (
-				63F1680BB8DB3F3BC4CF78BD48245E70 /* libfdk-aac.a */,
-				6582C757E863B6D5D33B8AD723E36528 /* libPLMediaStreamingKit.a */,
+				74D1B7DA75CF958A7F7737A16AC0DDD9 /* PLStreamingEnv.h */,
+				8EDBABDEB373E76970408B7FEA509E24 /* PLStreamingKit.h */,
+				A498C34242EEFA0D968052AEC71F7153 /* PLStreamingSession.h */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5CDCF3713FC1EF2067DB272DBFAE9BDB /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E22113D29E57B500138A612F21F7465E /* PLRTCStreamingKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		633C5F754CC6519F3AE5B96B2A852A78 /* PLMediaStreamingKit */ = {
-			isa = PBXGroup;
-			children = (
-				D573040561C9D8BE8618009F8A753B1A /* PLMediaStreamingKit.h */,
-				CD84AC5C5020DE1E12C819EE73EA181E /* PLMediaStreamingSession.h */,
-			);
-			name = PLMediaStreamingKit;
+			name = PLStreamingKit;
+			path = Pod/Library/include/PLStreamingKit;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				5CDCF3713FC1EF2067DB272DBFAE9BDB /* Development Pods */,
+				4251E1921279B0D2B94F8C1607ABD039 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				E359130C1722C6B337E7F306CFF5263C /* Pods */,
 				E9196307CC404335FD60B4D91DF0174E /* Products */,
 				B1A57B178318B36064C347BA6DEB68A9 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7EF62070464DC0AC61565150FC131608 /* PLRTCStreamingKit */ = {
+			isa = PBXGroup;
+			children = (
+				E020FAB82D3716AFBCD14BEAD90AF252 /* Common */,
+				D2D415BF6CD17DB5877D9ADE7A724FF5 /* Frameworks */,
+				E8B1BF83E0EE98DAF27D931C7DFC5275 /* PLMediaStreamingKit */,
+				F24B826097E904490BF9A41AF5ABB8AF /* PLRTCKit */,
+				124FFA2E3B68CF8A025D7D3062AC6412 /* PLRTCStreamingKit */,
+				60B23762024CD21684065741168C1812 /* PLStreamingKit */,
+			);
+			name = PLRTCStreamingKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		9A3969CBBA9B9695F8C67F9FD094F8AD /* QNNetDiag */ = {
@@ -443,33 +422,6 @@
 			);
 			name = QNNetDiag;
 			path = QNNetDiag;
-			sourceTree = "<group>";
-		};
-		A2C0A9B22985AE6A0DA6340270245D78 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				DCD7A38989D52CE08ACF626CA0A0F7B1 /* PLAudioCaptureConfiguration.h */,
-				86684DD366BECEF33A84A181C7884DA6 /* PLAudioEffectConfiguration.h */,
-				1DDB5325A1BD53A6F05C749950693DB4 /* PLAudioEffectCustomConfiguration.h */,
-				CFF0F02E872CBD6C914779CAFC9F0F15 /* PLAudioPlayer.h */,
-				6A4F90F77FB59F9A361497EA150CB446 /* PLAudioSession.h */,
-				6A041B2327C28BB62D5F395966A71BC6 /* PLAudioStreamingConfiguration.h */,
-				E18602F9FB6C69A9A442AB93EA8B7014 /* PLBuffer.h */,
-				4DB3CD82891CE0B90BC7CD38CE8418F4 /* PLCommon.h */,
-				F4D693DC8F16A4C7C0269D5CA6E68E43 /* PLPixelBuffer.h */,
-				C146AE0324056F80DCB780C0B378137E /* PLPixelBufferProcessor.h */,
-				86FA0AC6BE66FFEF91BA36FE77DEE32B /* PLRGBtoI420Processor.h */,
-				7346E444963350AFDDEC3A8A1D814F79 /* PLRTCConfiguration.h */,
-				BD9905B5C7C7D93CA123581BC78CC835 /* PLRTCVideoRender.h */,
-				A2753C48102D9EAC5FC336B75A1F45F0 /* PLRTCVideoView.h */,
-				947938A7A459F17BDB37FA0573044836 /* PLStream.h */,
-				4A0D9DD61F781CA5EED65434E132F7FF /* PLStreamStatus.h */,
-				7FEE80BC9B35B05A2B49FDC4917D1378 /* PLTypeDefines.h */,
-				FD380AF8AA27A6C682C12769A3323F11 /* PLVideoCaptureConfiguration.h */,
-				AF12E39E1B4C788B9A6174C18BBB9272 /* PLVideoCompositionDescription.h */,
-				F67893EC0E0B7BF05F62B391FEBD6038 /* PLVideoStreamingConfiguration.h */,
-			);
-			name = Common;
 			sourceTree = "<group>";
 		};
 		A7E67EFD894457DB01BEA17DA0064CC9 /* pili-librtmp */ = {
@@ -575,6 +527,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D2D415BF6CD17DB5877D9ADE7A724FF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CB61C6D50EF3E1185968C406F1C4B49 /* libfdk-aac.a */,
+				2A9E5D32C3A57FFEC3A6BFC7F8EEA72A /* libPLMediaStreamingKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -583,19 +544,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E22113D29E57B500138A612F21F7465E /* PLRTCStreamingKit */ = {
+		E020FAB82D3716AFBCD14BEAD90AF252 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				A2C0A9B22985AE6A0DA6340270245D78 /* Common */,
-				5C4E0C06A2D1A00F6C996404E4E6DCB9 /* Frameworks */,
-				1315D7320DAD3A913AAFDD9C983FD99F /* PLCameraStreamingKit */,
-				633C5F754CC6519F3AE5B96B2A852A78 /* PLMediaStreamingKit */,
-				1DF0ADF46C342B5A20251412C0BA2D9B /* PLRTCKit */,
-				0CC8D65BBEBEDF0005EFF3B159062C41 /* PLRTCStreamingKit */,
-				176A3D14D7854B19319055440DA7AC4D /* PLStreamingKit */,
+				2823CDFB1A1D060661BBFB58132ED2FD /* PLAudioCaptureConfiguration.h */,
+				11ED3EAB4790EE5E6D7141B990AE0ED8 /* PLAudioEffectConfiguration.h */,
+				DFB5DE14FDB623E554C07613937DCADC /* PLAudioEffectCustomConfiguration.h */,
+				EF01A22DDEDE16E2089FC5006F8A4F34 /* PLAudioPlayer.h */,
+				A451E335FFE0891A23E4C89777FC72B9 /* PLAudioSession.h */,
+				7822731F426416AA5B99E83D94F9CE8F /* PLAudioStreamingConfiguration.h */,
+				F0FA03CFE8189A98BEC58AD0321E18A5 /* PLBuffer.h */,
+				A230087299BF481D10163990F0C30433 /* PLCommon.h */,
+				D189681C34494C83AE7767879BDDC04F /* PLPixelBuffer.h */,
+				C4079AEEF8951112CD9AA7B62F876012 /* PLPixelBufferProcessor.h */,
+				C7EDCC34A12AEA7C82B02A58517FB79E /* PLRGBtoI420Processor.h */,
+				80A65BDEFA7FAF2D9D35627EDA754829 /* PLRTCConfiguration.h */,
+				CC8DCB3AC7D4ADB246B60CE767D2306F /* PLRTCVideoRender.h */,
+				ED3FDD86A00313275480E8E21DE861FF /* PLRTCVideoView.h */,
+				6F4A32DB0DCF508D340EF0505164418D /* PLStream.h */,
+				7BCE431763B773F867FFF6DC47A75874 /* PLStreamStatus.h */,
+				0757CA97E175DC6AB0C88736381F7DAD /* PLTypeDefines.h */,
+				61BB16B72427802BC86A9BE0E3F47297 /* PLVideoCaptureConfiguration.h */,
+				53AF08D52806BE0E0F1E5523D3D28F1D /* PLVideoCompositionDescription.h */,
+				C56B8425C707597D3DFC1A239245F994 /* PLVideoStreamingConfiguration.h */,
 			);
-			name = PLRTCStreamingKit;
-			path = ../..;
+			name = Common;
+			path = Pod/Library/include/Common;
 			sourceTree = "<group>";
 		};
 		E359130C1722C6B337E7F306CFF5263C /* Pods */ = {
@@ -622,6 +596,16 @@
 			path = PLPlayerKit;
 			sourceTree = "<group>";
 		};
+		E8B1BF83E0EE98DAF27D931C7DFC5275 /* PLMediaStreamingKit */ = {
+			isa = PBXGroup;
+			children = (
+				ECE5F3E285A96863D12E461B12E4EE98 /* PLMediaStreamingKit.h */,
+				65E2645088AB486AEEFF7912EA47106B /* PLMediaStreamingSession.h */,
+			);
+			name = PLMediaStreamingKit;
+			path = Pod/Library/include/PLMediaStreamingKit;
+			sourceTree = "<group>";
+		};
 		E9196307CC404335FD60B4D91DF0174E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -631,6 +615,15 @@
 				74F8C0C30F3CF2172DB59DDA0D1B8972 /* libQNNetDiag.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F24B826097E904490BF9A41AF5ABB8AF /* PLRTCKit */ = {
+			isa = PBXGroup;
+			children = (
+				ECE7E34587DADD7B70D7EF7B16CF9F95 /* PLRTCSession.h */,
+			);
+			name = PLRTCKit;
+			path = Pod/Library/include/PLRTCKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
