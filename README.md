@@ -116,7 +116,7 @@ PLRTCStreamingKit 是七牛推出的一款适用于 iOS 平台的连麦互动 SD
 
 
 ## 4 文档
-请参考开发文档：[PLRTCStreamingKit 开发文档](https://github.com/pili-engineering/PLRTCStreamingKit/Documents/PLRTCStreamingKit.md)
+请参考开发文档：[PLRTCStreamingKit 开发文档](Documents/PLRTCStreamingKit.md)
 
 ## 5 反馈及意见
 
@@ -133,7 +133,7 @@ PLRTCStreamingKit 是七牛推出的一款适用于 iOS 平台的连麦互动 SD
 正常网络条件下，连麦对讲延时在 200-300ms 左右。
 
 ### 6.3 如何从 v1 版本连麦更新到 v2 版本？
-可参考 [这个文档](https://github.com/pili-engineering/PLRTCStreamingKit/Documents/how-to-upgrade-to-v2.md)
+可参考 [这个文档](Documents/how-to-upgrade-to-v2.md)
 
 
 
