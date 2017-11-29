@@ -757,17 +757,6 @@
 @property (nonatomic, assign, readonly) NSUInteger rtcParticipantsCount;
 
 /**
- @abstract 配置合流后连麦的窗口在主窗口中的位置和大小，里面存放 NSValue 封装的 CGRect。注意，该位置是指连麦的窗口在推出来流的画面中的位置，并非在本地预览的位置
- 
- @see - (void)RTCStreamingSession:(PLRTCStreamingSession *)session userID:(NSString *)userID didAttachRemoteView:(UIView *)remoteView;
- 
- @see - (void)RTCStreamingSession:(PLRTCStreamingSession *)session userID:(NSString *)userID didDetachRemoteView:(UIView *)remoteView;
- 
- @warning - 目前版本需要在连麦开始前设置好，连麦过程中更新无效
- */
-@property (nonatomic, strong) NSArray *rtcMixOverlayRectArray;
-
-/**
  @abstract 设置连麦视频动态码率调整的范围的下限(单位：bps)，当上下限相等时，码率固定，将不会动态调整。
  */
 @property (nonatomic, assign) NSUInteger rtcMinVideoBitrate;

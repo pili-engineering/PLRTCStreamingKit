@@ -77,20 +77,20 @@ PLRTCStreamingKit 是七牛推出的一款适用于 iOS 平台的连麦互动 SD
 PLRTCStreamingKit 提供四种不同的 API，分别介绍如下：
 ### 推流    
 
-- PLStreamingKit，核心类是 PLStreamingSession，提供包括音视频编码、封包以及网络发送功能，另外，还支持录屏推流功能；  
+- 核心类是 PLStreamingSession，提供包括音视频编码、封包以及网络发送功能。另外，还支持 ReplayKit 录屏推流功能。
 
 ### 采集 + 连麦   
 
-- PLRTCSession，核心类是 PLRTCSession，提供包括音视频编码、封包以及连麦功能，可单独做连麦互动；    
+- 核心类是 PLRTCSession，提供包括音视频采集、美颜滤镜以及连麦功能；    
  
  
 ### 推流 + 连麦   
 
-- PLRTCStreamingKit，核心类是 PLRTCStreamingSession，在 PLStreamingKit 基础上提供连麦功能，PLRTCStreamingKit 不支持音视频采集，需要您调用相关接口导入音视频数据；      
+- 核心类是 PLRTCStreamingSession，在 PLStreamingSession 基础上提供连麦功能，PLRTCStreamingSession 不支持音视频采集，需要您调用相关接口导入音视频数据；      
 
 ### 采集 + 推流 + 连麦    
 
-- PLMediaStreamingKit，核心类是 PLMediaStreamingSession，在 PLRTCStreamingKit 基础上增加音视频采集、美颜、音效等基础功能，我们强烈推荐对音视频没有太多了解的开发者使用 PLMediaStreamingKit 提供的 API 进行开发，如果您对音视频数据的采集和处理有更多的需求，那么可以使用 PLStreamingKit 或 PLRTCStreamingKit 提供的 API 进行开发。   
+- 核心类是 PLMediaStreamingSession，在 PLRTCStreamingSession 基础上增加音视频采集、美颜、音效等基础功能，我们强烈推荐对音视频没有太多了解的开发者使用 PLMediaStreamingSession 进行开发，如果您对音视频数据的采集和处理有更多的需求，那么可以使用 PLStreamingSession 或 PLRTCStreamingSession 进行开发。   
 
 <a id="4.3"></a>
 
@@ -100,10 +100,10 @@ PLRTCStreamingKit 提供四种不同的 API，分别介绍如下：
 
 | 接口类名                 | 功能        | 备注              |
 | ----------------------- | --------- | --------------- |
-| PLStreamingSession    | 负责推流功能   | 提供包括音视频编码、封包以及网络发送功能，另外，还支持录屏推流功能 |
-| PLRTCSession   	   | 负责采集和连麦功能 | 提供包括音视频编码、封包以及连麦功能,可单独做连麦互动   |
-| PLRTCStreamingSession | 负责推流和连麦功能 | 在 PLStreamingKit 基础上提供连麦功能     |
-| PLMediaStreamingSession  | 负责采集，推流和连麦功能 | 在 PLRTCStreamingKit 基础上增加音视频采集、美颜、音效等基础功能     |
+| PLStreamingSession    | 提供推流功能   | 提供包括音视频编码、封包以及网络发送功能，另外，还支持录屏推流功能 |
+| PLRTCSession   	   | 提供采集和连麦功能 | 提供包括音视频编码、封包以及连麦功能,可单独做连麦互动   |
+| PLRTCStreamingSession | 提供推流和连麦功能 | 在 PLStreaming 基础上提供连麦功能     |
+| PLMediaStreamingSession  | 提供采集，推流和连麦功能 | 在 PLRTCStreaming 基础上增加音视频采集、美颜、音效等基础功能     |
 <a id="4.4"></a>
 
 ## 4.4 配置接口类
@@ -123,7 +123,7 @@ PLRTCStreamingKit 提供四种不同的 API，分别介绍如下：
 
 <a id="4.5"></a>
 
-## 4.5 连麦显示接口类
+## 4.5 连麦视频渲染类
 
 连麦显示功能相关的类说明如下：
 
@@ -178,7 +178,7 @@ $ pod install
 在 `AppDelegate.m` 中添加引用
 
 ```Objective-C
-#import <PLMediaStreamingKit/PLMediaStreamingKit.h>
+#import <PLStreamingEnv.h>
 ```
 
 并在 `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` 中添加如下代码:
@@ -190,7 +190,7 @@ $ pod install
 然后在 `ViewController.m` 中添加引用
 
 ```Objective-C
-#import <PLMediaStreamingKit/PLMediaStreamingKit.h>
+#import <PLMediaStreamingSession.h>
 ```
 
 <a id="5.3.2"></a>
@@ -359,7 +359,7 @@ Done，没有额外的代码了，现在可以开始一次连麦了。如果运�
 <a id="6.1"></a>
 ## 6.1 音视频采集和编码配置
 
-`PLMediaStreamingKit` 中通过不同的 configuration 设置不同的采集或编码配置信息，对应的有：
+`PLMediaStreaming` 中通过不同的 configuration 设置不同的采集或编码配置信息，对应的有：
 
 - `PLVideoCaptureConfiguration` 视频采集配置
 - `PLAudioCaptureConfiguration` 音频采集配置
@@ -447,7 +447,7 @@ Done，没有额外的代码了，现在可以开始一次连麦了。如果运�
 - videoEncoderType
   - H.264 编码器类型，默认采用 `PLH264EncoderType_AVFoundation` 编码方式，在 iOS 8 及以上的系统可采用 `PLH264EncoderType_VideoToolbox`，编码效率更高。
 
-`PLMediaStreamingKit` 为了防止编码参数设定失败而导致编码失败，出现推流无视频的情况，依据 videoProfileLevel 限定了其他参数的范围，该限定范围针对 Quality 生成的配置同样有效。参见以下表格：
+`PLMediaStreaming` 为了防止编码参数设定失败而导致编码失败，出现推流无视频的情况，依据 videoProfileLevel 限定了其他参数的范围，该限定范围针对 Quality 生成的配置同样有效。参见以下表格：
 
 | ProfileLevel | Max VideoSize | Max FPS | Max Video BitRate(Mbps) |
 |---|---|---|---|
@@ -648,9 +648,9 @@ PLAudioPlayer *player = [mediaStreamingSession audioPlayerWithFilePath:@"audio f
 
 <a id="6.1.11"></a>
 ### 6.1.11 外部采集音视频并导入
-我们强烈推荐对音视频没有太多了解的开发者使用 `PLMediaStreamingKit` 提供的 API 进行开发，如果您对音视频数据的采集和处理有更多的需求，那么可以使用 `PLStreamingKit` 或 `PLRTCStreamingKit` 提供的 API 进行开发，不过在进行开发之前请确保您已经掌握了包括音视频采集及处理等相关的基础知识。如概述所述，`PLRTCStreamingKit` 在 `PLStreamingKit` 基础上增加连麦功能，因此，如果您需要连麦功能，可以使用`PLRTCStreamingKit`，否则，直接使用`PLStreamingKit` 即可。
+我们强烈推荐对音视频没有太多了解的开发者使用 `PLMediaStreaming` 提供的 API 进行开发，如果您对音视频数据的采集和处理有更多的需求，那么可以使用 `PLStreaming` 或 `PLRTCStreaming` 提供的 API 进行开发，不过在进行开发之前请确保您已经掌握了包括音视频采集及处理等相关的基础知识。如概述所述，`PLRTCStreaming` 在 `PLStreaming` 基础上增加连麦功能，因此，如果您需要连麦功能，可以使用`PLRTCStreaming`，否则，直接使用`PLStreaming` 即可。
 
-`PLStreamingKit` 提供如下 API 来支持开发者导入音视频到 SDK 中：
+`PLStreaming` 提供如下 API 来支持开发者导入音视频到 SDK 中：
 
 ```
 - (void)pushVideoSampleBuffer:(CMSampleBufferRef)sampleBuffer;
@@ -664,13 +664,13 @@ PLAudioPlayer *player = [mediaStreamingSession audioPlayerWithFilePath:@"audio f
 - (void)pushAudioBuffer:(AudioBuffer *)audioBuffer asbd:(const AudioStreamBasicDescription *)asbd completion:(void (^)(BOOL success))handler;
 ```
 
-`PLRTCStreamingKit`提供如下 API 来支持开发者导入音视频到 SDK 中：
+`PLRTCStreaming`提供如下 API 来支持开发者导入音视频到 SDK 中：
 
 ```
 - (void)pushPixelBuffer:(CVPixelBufferRef)pixelBuffer completion:(void (^)(BOOL success))handler;
 - (void)pushAudioBuffer:(AudioBuffer *)audioBuffer asbd:(const AudioStreamBasicDescription *)asbd completion:(void (^)(BOOL success))handler;
 ```
-注意，受连麦接口所限，目前 `PLRTCStreamingKit` 仅支持 `kCVPixelFormatType_420YpCbCr8BiPlanarFullRange` 格式的 pixelBuffer 数据。
+注意，受连麦接口所限，目前 `PLRTCStreaming` 仅支持 `kCVPixelFormatType_420YpCbCr8BiPlanarFullRange` 格式的 pixelBuffer 数据。
 
 
 
@@ -678,7 +678,7 @@ PLAudioPlayer *player = [mediaStreamingSession audioPlayerWithFilePath:@"audio f
 <a id="6.2"></a>
 ## 6.2 DNS 优化
 
-在大陆一些地区或特别的运营商线路，存在较为普遍的 DNS 劫持问题，而这对于依赖 DNS 解析 rtmp 流地址的 `PLStreamingKit` 来说是很糟糕的情况，为了解决这一问题，我们引入了 `HappyDNS` 这个库，以便可以实现 httpDNS，localDNS 等方式解决这类问题。
+在大陆一些地区或特别的运营商线路，存在较为普遍的 DNS 劫持问题，而这对于依赖 DNS 解析 rtmp 流地址的 `PLStreaming` 来说是很糟糕的情况，为了解决这一问题，我们引入了 `HappyDNS` 这个库，以便可以实现 httpDNS，localDNS 等方式解决这类问题。
 
 <a id="6.2.1"></a>
 ### 6.2.1 HappyDNS
@@ -692,7 +692,7 @@ PLAudioPlayer *player = [mediaStreamingSession audioPlayerWithFilePath:@"audio f
 <a id="6.3"></a>
 ## 6.3 流状态获取
 
-在 `PLMediaStreamingKit` 中，通过反馈 `PLMediaStreamingSession` 的状态来反馈流的状态。我们定义了几种状态，确保 `PLMediaStreamingSession` 对象在有限的几个状态间切换，并可以较好的反应流的状态。
+在 `PLMediaStreaming` 中，通过反馈 `PLMediaStreamingSession` 的状态来反馈流的状态。我们定义了几种状态，确保 `PLMediaStreamingSession` 对象在有限的几个状态间切换，并可以较好的反应流的状态。
 
 | 状态名 | 含义 |
 |---|---|
@@ -754,12 +754,12 @@ status 的状态回调可以很好的反应发送情况，及网络是否流畅�
 
 <a id="6.4.1"></a>
 ### 6.4.1 设置连麦者的画面大小和位置
-对于主播来说，其视频数据先后经过采集、连麦、合流、编码等阶段，每个阶段的画面尺寸由如下配置确定：
+对于主播来说，其视频数据先后经过采集、连麦、合流、推流等阶段，每个阶段的画面尺寸由如下配置确定：
 
 - 采集：采集的视频画面尺寸由 PLVideoCaptureConfiguration 的 sessionPreset 决定；
-- 连麦：连麦的视频画面尺寸由 PLRTCConfiguration 的 videoSizePreset 决定，若 videoSizePreset 为 PLRTCVideoSizePresetDefault，则与采集的画面尺寸保持一致；
-- 合流：合流的画面尺寸由 PLRTCConfiguration 的 mixVideoSize 决定，若 mixVideoSize 未设置，则与连麦的画面尺寸保持一致；若 mixVideoSize 设置为具体的值，则需要设置主播在合流的画面中的大小和位置，即设置  PLRTCConfiguration 的 localVideoRect 属性；
-- 编码：编码的视频画面尺寸由 PLVideoStreamingConfiguration 的 videoSize 决定；
+- 连麦：连麦的视频画面尺寸由 PLRTCConfiguration 的 videoSizePreset 决定，videoSizePreset 的默认值为 PLRTCVideoSizePreset368x640；       
+- 合流：合流的画面尺寸由 PLRTCConfiguration 的 mixVideoSize 决定，若 mixVideoSize 未设置，则与推流的画面尺寸保持一致；主播在合流的画面中的大小和位置由 PLRTCConfiguration 的 localVideoRect 属性决定，若 localVideoRect 未设置，则默认主播画面大小与 mixVideoSize 一致；    
+- 推流：推流的视频画面尺寸由 PLVideoStreamingConfiguration 的 videoSize 决定；
 
 用一个 CGRect 来表示连麦者的画面在合流的画面中的大小和位置，其中 origin.x 表示水平方向相对于合流的画面的像素，origin.y 表示垂直方向相对于合流的画面的像素，size.width 表示连麦者的画面的宽度，size.height 表示连麦者的画面的高度。
 
@@ -808,13 +808,17 @@ typedef NS_ENUM(NSUInteger, PLRTCState) {
 };
 ```
 <a id="6.4.3"></a>
-### 6.4.3 连麦视频渲染到 View 及取消渲染的回调
+### 6.4.3 连麦视频首帧解码后的回调
 
 ```
 /// @abstract 连麦时，远端用户（以 userID 标识）的视频首帧解码后的回调，如果需要显示，则该需要返回含 renderView 的 PLRTCVideoRender 对象
 /// @see PLRTCVideoRender
-- (PLRTCVideoRender *)mediaStreamingSession:(PLMediaStreamingSession *)session firstVideoFrameDecodedOfUserID:(NSString *)userID;
+- (PLRTCVideoRender *)mediaStreamingSession:(PLMediaStreamingSession *)session firstVideoFrameDecodedOfUserID:(NSString *)userID;     
+```       
+<a id="6.4.4"></a>
+### 6.4.4 连麦视频取消渲染的回调
 
+```   
 /// @abstract 连麦时，取消远端用户（以 userID 标识）的视频渲染到 renderView 后的回调，可在该方法中将 renderView 从界面上移除。本接口在主队列中回调。
 ///           该接口所回调的 remoteView，即为通过
 ///           - (PLRTCVideoRender *)mediaStreamingSession:(PLMediaStreamingSession *)session
@@ -824,21 +828,21 @@ typedef NS_ENUM(NSUInteger, PLRTCState) {
 - (void)mediaStreamingSession:(PLMediaStreamingSession *)session userID:(NSString *)userID didDetachRemoteView:(UIView *)remoteView;
 
 ```
-<a id="6.4.4"></a>
-### 6.4.4 连麦错误状态回调
+<a id="6.4.5"></a>
+### 6.4.5 连麦错误状态回调
 ```
 - (void)mediaStreamingSession:(PLMediaStreamingSession *)session rtcDidFailWithError:(NSError *)error;
 ```
 可通过打印 error 错误码来了解具体的错误信息，错误码定义在 `PLTypeDefines.h` 文件中。
 
-<a id="6.4.5"></a>
-### 6.4.5 连麦被踢出房间的回调
+<a id="6.4.6"></a>
+### 6.4.6 连麦被踢出房间的回调
 ```
 /// @abstract 被 userID 从房间踢出
 - (void)mediaStreamingSession:(PLMediaStreamingSession *)session didKickoutByUserID:(NSString *)userID;
 ```
-<a id="6.4.6"></a>
-### 6.4.6 连麦用户加入房间/离开房间的回调
+<a id="6.4.7"></a>
+### 6.4.7 连麦用户加入房间/离开房间的回调
 ```
 /// @abstract  userID 加入房间
 - (void)mediaStreamingSession:(PLMediaStreamingSession *)session didJoinConferenceOfUserID:(NSString *)userID;
@@ -847,8 +851,8 @@ typedef NS_ENUM(NSUInteger, PLRTCState) {
 - (void)mediaStreamingSession:(PLMediaStreamingSession *)session didLeaveConferenceOfUserID:(NSString *)userID;
 ```
 
-<a id="6.4.7"></a>
-### 6.4.7 纯音频连麦
+<a id="6.4.8"></a>
+### 6.4.8 纯音频连麦
 实现纯音频很简单，调用 
 
 ```
@@ -859,8 +863,8 @@ typedef NS_ENUM(NSUInteger, PLRTCState) {
 ```
 时 rtcConfiguration 配置 PLRTCConferenceType 为 `PLRTCConferenceTypeAudio` 即可。
 
-<a id="6.4.8"></a>
-### 6.4.8 带宽占用优化
+<a id="6.4.9"></a>
+### 6.4.9 带宽占用优化
 连麦互动相比于原有的单向推流＋播放，增加了更多的带宽占用，因此需要合理的分配推流&连麦的参数，以达到最好的效果。
 
 - 对于主播而言，同时需要 “推流”＋“连麦”，因此，主播端的带宽占用由三部分决定，“推流的码率” ＋ “连麦上行码率” ＋ “连麦下行的码率”
@@ -869,8 +873,8 @@ typedef NS_ENUM(NSUInteger, PLRTCState) {
 
 - 连麦的码率设置可以查看 rtcMinVideoBitrate 和 rtcMaxVideoBitrate 属性说明；
 
-<a id="6.4.9"></a>
-### 6.4.9 降低功耗
+<a id="6.4.10"></a>
+### 6.4.10 降低功耗
 对于主播而言，同时需要 “推流”＋“连麦”，因此对手机的性能提出了更高的要求，我们也可以通过合理的参数配置，来适当减轻主播端的功耗压力。
 
 - 合理配置连麦者的画面尺寸
@@ -949,7 +953,7 @@ session.connectionChangeActionCallback = ^(PLNetworkStateTransition transition) 
 <a id="6.5.2"></a>
 ### 6.5.2 弱网优化
 
-移动直播过程中存在着各种各样的网络挑战。由于无线网络相对于有线网络，可靠性较低，会经常遇到信号覆盖不佳导致的高丢包、高延时等问题，特别是在用网高峰期，由于带宽有限，网络拥塞的情况时有发生。自 [v2.1.3](https://github.com/pili-engineering/PLMediaStreamingKit/releases/tag/v2.1.3) 起，`PLMediaStreamingKit` 内置了一套弱网优化方案，可以满足以下两个诉求：
+移动直播过程中存在着各种各样的网络挑战。由于无线网络相对于有线网络，可靠性较低，会经常遇到信号覆盖不佳导致的高丢包、高延时等问题，特别是在用网高峰期，由于带宽有限，网络拥塞的情况时有发生。自 [v2.1.3](https://github.com/pili-engineering/PLMediaStreamingKit/releases/tag/v2.1.3) 起，`PLMediaStreaming` 内置了一套弱网优化方案，可以满足以下两个诉求：
 
 - 能动态地适应网络质量，即在质量不佳的网络下，能够自动下调视频编码的输出码率和帧率，而当网络质量恢复稳定时，输出码率和帧率也应得到相应回升，并能在调节过程中使得码率与帧率变化相对平稳。
 - 在直播端网络质量稳定时，确保编码器输出的码率和帧率恒定在一个期望的最高值，以提供良好的清晰度和流畅度。
@@ -984,7 +988,7 @@ session.connectionChangeActionCallback = ^(PLNetworkStateTransition transition) 
 <a id="6.6.1"></a>
 #### 6.6.1 水印
 
-`PLMediaStreamingKit` 支持内置水印功能，你可以根据自己的需要添加水印或移除水印，并且能够自由设置水印的大小和位置。需要注意的是水印功能对预览和直播流均生效。
+`PLMediaStreaming` 支持内置水印功能，你可以根据自己的需要添加水印或移除水印，并且能够自由设置水印的大小和位置。需要注意的是水印功能对预览和直播流均生效。
 
 添加水印
 ```Objective-C
@@ -1002,7 +1006,7 @@ session.connectionChangeActionCallback = ^(PLNetworkStateTransition transition) 
 <a id="6.6.2"></a>
 #### 6.6.2 美颜
 
-'PLMediaStreamingKit' 支持内置美颜功能，你可以根据自己的需要选择开关美颜功能，并且能够自由调节包括美颜，美白，红润等在内的参数。需要注意的是水印功能对预览和直播流均生效。
+'PLMediaStreaming' 支持内置美颜功能，你可以根据自己的需要选择开关美颜功能，并且能够自由调节包括美颜，美白，红润等在内的参数。需要注意的是水印功能对预览和直播流均生效。
 
 按照默认参数开启或关闭美颜
 ```Objective-C
@@ -1027,7 +1031,7 @@ session.connectionChangeActionCallback = ^(PLNetworkStateTransition transition) 
 <a id="6.7"></a>
 ### 6.7 录屏推流
 
-`PLStreamingKit` 支持 iOS 10 新增的录屏推流 ([`ReplayKit Live`](https://developer.apple.com/reference/replaykit)) 功能，开发者可通过构建 [App Extension](https://developer.apple.com/app-extensions) 来调用推流 API 实现实时游戏直播等功能。需要注意的是，实时直播需要游戏或 App 本身实现对 `ReplayKit` 的支持。
+`PLStreaming` 支持 iOS 10 新增的录屏推流 ([`ReplayKit Live`](https://developer.apple.com/reference/replaykit)) 功能，开发者可通过构建 [App Extension](https://developer.apple.com/app-extensions) 来调用推流 API 实现实时游戏直播等功能。需要注意的是，实时直播需要游戏或 App 本身实现对 `ReplayKit` 的支持。
 
 <a id="6.7.1"></a>
 ### 6.7.1 创建 Broadcast Upload Extension
@@ -1044,7 +1048,7 @@ Xcode 会额外自动创建一个类型为 `Broadcast UI Extension` 的 Target�
 创建推流 API 调用管理类，添加头文件引用：
 
 ``` objectivec
-#import <PLMediaStreamingKit/PLStreamingKit.h>
+#import <PLStreamingSession.h>
 ```
 
 头文件参考
@@ -1052,7 +1056,7 @@ Xcode 会额外自动创建一个类型为 `Broadcast UI Extension` 的 Target�
 ``` objectivec
 #import <Foundation/Foundation.h>
 
-#import <PLMediaStreamingKit/PLStreamingKit.h>
+#import <PLStreamingSession.h>
 
 @interface BroadcastManager : NSObject
 
@@ -1151,7 +1155,7 @@ static BroadcastManager *_instance;
 audioConfiguration.inputAudioChannelDescriptions = @[kPLAudioChannelApp, kPLAudioChannelMic];
 ```
 
-其中 `kPLAudioChannelApp` 对应于 `RPSampleBufferTypeAudioApp`，是 ReplayKit Live 回调的 app 音频数据，`kPLAudioChannelMic` 对应于 `RPSampleBufferTypeAudioMic`，是 ReplayKit Live 回调的 mic 音频数据。之所以需要显示声明，是为了在 PLStreamingKit 在音频编码前将两路音频流进行混音。
+其中 `kPLAudioChannelApp` 对应于 `RPSampleBufferTypeAudioApp`，是 ReplayKit Live 回调的 app 音频数据，`kPLAudioChannelMic` 对应于 `RPSampleBufferTypeAudioMic`，是 ReplayKit Live 回调的 mic 音频数据。之所以需要显示声明，是为了在 PLStreaming 在音频编码前将两路音频流进行混音。
 
 在自动生成的 `SampleHandler.m` 中实现 `RPBroadcastSampleHandler` 协议部分方法如下：
 
@@ -1221,7 +1225,7 @@ PLVideoCaptureConfiguration *videoCaptureConfiguration = [PLVideoCaptureConfigur
 PLAudioCaptureConfiguration *audioCaptureConfiguration = [PLAudioCaptureConfiguration defaultConfiguration];
 ```
 
-*注意：采集的视频画面尺寸由 `PLVideoCaptureConfiguration` 的 `sessionPreset` 决定，而连麦的视频画面尺寸由 `PLRTCConfiguration` 的 `videoSize` 决定，若 `videoSize` 为 `PLRTCVideoSizePresetDefault`，则与采集的画面尺寸保持一致*
+*注意：采集的视频画面尺寸由 `PLVideoCaptureConfiguration` 的 `sessionPreset` 决定，而连麦的视频画面尺寸由 `PLRTCConfiguration` 的 `videoSizePreset ` 决定，若 `videoSizePreset ` 为 `PLRTCVideoSizePresetDefault`，则 videoSizePreset 的默认值为 PLRTCVideoSizePreset368x640*
 
 <a id="6.8.3"></a>
 ### 6.8.3 PLRTCSession 初始化方法
@@ -1270,7 +1274,8 @@ self.session = [[PLRTCSession alloc] initWithVideoCaptureConfiguration:videoCapt
                              userID:(NSString *)userID
                           roomToken:(NSString *)roomToken
                    rtcConfiguration:(PLRTCConfiguration *)rtcConfiguration;
-```
+```       
+*注意：调用上述接口之前，务必成功调用 `setWithServerRegionID` 接口。*
 
 #### 停止连麦
   - 停止连麦后，音视频会取消发布
@@ -1362,17 +1367,16 @@ error 状态对应的 Delegate 回调方法是
 除了调用 `-stopConference ` 之外的所有导致连麦断开的情况，都被归属于非正常断开的情况，此时就会触发该回调。可通过打印 error 错误码来了解具体的错误信息，错误码定义在 `PLTypeDefines.h` 文件中。
 
 <a id="6.8.7"></a>
-### 6.8.7 视频渲染及取消渲染的回调
+### 6.8.7 连麦视频首帧解码后的回调
 
-#### 将视频渲染到 View
 
 ```
 /// @abstract 连麦时，远端用户（以 userID 标识）的视频首帧解码后的回调，如果需要显示，则该需要返回含 renderView 的 PLRTCVideoRender 对象
 /// @see PLRTCVideoRender
-- (void)rtcSession:(PLRTCSession *)session firstVideoFrameDecodedOfUserID:(NSString *)userID;
-```
+- (PLRTCVideoRender *)rtcSession:(PLRTCSession *)session firstVideoFrameDecodedOfUserID:(NSString *)userID;
+```    
+### 6.8.8 连麦视频取消渲染的回调
 
-#### 取消渲染
 
 ```
 /// @abstract 连麦时，取消远端用户（以 userID 标识）的视频渲染到 renderView 后的回调，可在该方法中将 renderView 从界面上移除。本接口在主队列中回调。
@@ -1385,7 +1389,7 @@ error 状态对应的 Delegate 回调方法是
 
 ```
 <a id="6.8.8"></a>
-### 6.8.8 连麦房间的相关回调
+### 6.8.9 连麦房间的相关回调
 ```
 /// @abstract 被 userID 从房间踢出
 - (void)rtcSession:(PLRTCSession *)session didKickoutByUserID:(NSString *)userID;
@@ -1402,25 +1406,7 @@ error 状态对应的 Delegate 回调方法是
 ```
 
 <a id="6.8.9"></a>
-### 6.8.9 PLRTCSessionStateDelegate 其他回调
-
-- 取消发布视频时的回调
-
-``` Objective-C
-- (void)rtcSession:(PLRTCSession *)session didUnpublishVideoOfUserID:(NSString *)userID;
-```
-
-- 发布音频时的回调
-
-``` Objective-C
-- (void)rtcSession:(PLRTCSession *)session didpublishAudioOfUserID:(NSString *)userID;
-```
-
-- 取消发布音频时的回调
-
-``` Objective-C
-- (void)rtcSession:(PLRTCSession *)session didUnpublishAudioOfUserID:(NSString *)userID;
-```
+### 6.8.10 PLRTCSessionStateDelegate 其他回调
 
 - 音量监测回调
 
@@ -1462,32 +1448,32 @@ error 状态对应的 Delegate 回调方法是
 
 <a id="7"></a>
 # 8 历史记录
-- [3.0.0]- 1.2.0 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/master/iOS/ReleaseNotes/release-notes-3.0.0.md))       
- 基本的推流和连麦对讲功能    
- 基本的视频合流和音频混音功能    
- 支持丰富的连麦消息回调    
- 支持踢人功能    
- 支持获取连麦房间统计信息（帧率、码率等）    
- 支持纯音频连麦    
- 支持连麦大小窗口切换    
- 支持连麦获取远端麦克风音量大小    
- 支持硬件编码    
- 支持 ARM7, ARM64 指令集   
- 提供音视频配置分离    
- 支持推流时码率变更    
- 支持弱网丢帧策略    
- 支持模拟器运行    
- 支持 RTMP 协议直播推流    
- 支持后台推流    
- 提供多码率可选    
- 提供 H.264 视频编码    
- 支持多分辨率编码   
- 提供 AAC 音频编码   
- 提供 HeaderDoc 文档    
- 支持美颜滤镜    
- 支持水印功能     
- 提供内置音效及音频文件播放功能    
- 支持返听功能    
- 支持截屏功能   
- 支持 iOS 10 ReplayKit 录屏    
- 支持苹果 ATS 安全标准    
+- 3.0.0 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/master/iOS/ReleaseNotes/release-notes-3.0.0.md))         
+ - 基本的推流和连麦对讲功能    
+ - 基本的视频合流和音频混音功能    
+ - 支持丰富的连麦消息回调    
+ - 支持踢人功能    
+ - 支持获取连麦房间统计信息（帧率、码率等）    
+ - 支持纯音频连麦    
+ - 支持连麦大小窗口切换    
+ - 支持连麦获取远端麦克风音量大小    
+ - 支持硬件编码    
+ - 支持 ARM7, ARM64 指令集   
+ - 提供音视频配置分离    
+ - 支持推流时码率变更    
+ - 支持弱网丢帧策略    
+ - 支持模拟器运行    
+ - 支持 RTMP 协议直播推流    
+ - 支持后台推流    
+ - 提供多码率可选    
+ - 提供 H.264 视频编码    
+ - 支持多分辨率编码   
+ - 提供 AAC 音频编码   
+ - 提供 HeaderDoc 文档    
+ - 支持美颜滤镜    
+ - 支持水印功能     
+ - 提供内置音效及音频文件播放功能    
+ - 支持返听功能    
+ - 支持截屏功能   
+ - 支持 iOS 10 ReplayKit 录屏    
+ - 支持苹果 ATS 安全标准    

@@ -19,7 +19,7 @@ PLRTCStreamingKit 是七牛推出的一款适用于 iOS 平台的连麦互动 SD
 | 基本的视频合流和音频混音功能 | 边唱边聊不单调 |
 | 支持丰富的连麦消息回调 | 掌握连麦消息状态 |
 | 支持踢人功能 | 多级管理 |
-| 支持获取连麦房间统计信息（帧率、码率等） | 充分掌握连麦动态 |
+| 支持获取连麦房间统计信息 | 充分掌握连麦动态 |
 | 支持纯音频连麦 | 自由配置语音通话 |
 | 支持连麦大小窗口切换 | 轻松实现更多显示可能 |
 | 支持连麦获取远端麦克风音量大小 | 轻松获得聊天音量 |
@@ -45,24 +45,24 @@ PLRTCStreamingKit 是七牛推出的一款适用于 iOS 平台的连麦互动 SD
 | 支持苹果 ATS 安全标准 | 安全性更高 | 
 
 ## 系统
-PLRTCStreamingKit 提供四种不同的 API，分别介绍如下：    
+PLRTCStreamingKit 提供四种不同的 API，以满足不同的业务需求，分别介绍如下：    
 
 ### 推流    
 
-- PLStreamingKit，核心类是 PLStreamingSession，提供包括音视频编码、封包以及网络发送功能，另外，还支持录屏推流功能；  
+- 核心类是 PLStreamingSession，提供包括音视频编码、封包以及网络发送功能。另外，还支持 ReplayKit 录屏推流功能。
 
 ### 采集 + 连麦   
 
-- PLRTCSession，核心类是 PLRTCSession，提供包括音视频编码、封包以及连麦功能；    
+- 核心类是 PLRTCSession，提供包括音视频采集、美颜滤镜以及连麦功能；    
  
  
 ### 推流 + 连麦   
 
-- PLRTCStreamingKit，核心类是 PLRTCStreamingSession，在 PLStreamingKit 基础上提供连麦功能，PLRTCStreamingKit 不支持音视频采集，需要您调用相关接口导入音视频数据；      
+- 核心类是 PLRTCStreamingSession，在 PLStreamingSession 基础上提供连麦功能，PLRTCStreamingSession 不支持音视频采集，需要您调用相关接口导入音视频数据；      
 
 ### 采集 + 推流 + 连麦    
 
-- PLMediaStreamingKit，核心类是 PLMediaStreamingSession，在 PLRTCStreamingKit 基础上增加音视频采集、美颜、音效等基础功能，我们强烈推荐对音视频没有太多了解的开发者使用 PLMediaStreamingKit 提供的 API 进行开发，如果您对音视频数据的采集和处理有更多的需求，那么可以使用 PLStreamingKit 或 PLRTCStreamingKit 提供的 API 进行开发。     
+- 核心类是 PLMediaStreamingSession，在 PLRTCStreamingSession 基础上增加音视频采集、美颜、音效等基础功能，我们强烈推荐对音视频没有太多了解的开发者使用 PLMediaStreamingSession 进行开发，如果您对音视频数据的采集和处理有更多的需求，那么可以使用 PLStreamingSession 或 PLRTCStreamingSession 进行开发。     
 
 
 ## 问题反馈
