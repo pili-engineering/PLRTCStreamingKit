@@ -54,14 +54,14 @@ PLRTCStreamingKit 是七牛推出的一款适用于 iOS 平台的连麦互动 SD
 - 计算连麦的 roomToken 并提供给 App，该 roomToken 是结合 userId、roomName 等信息使用七牛的 AccessKey 和 SecretKey 按照一定的规则生成
 - 提供连麦的业务逻辑，如：观众申请连麦，主播同意/拒绝连麦、进入/退出房间等消息处理
 
-关于 roomToken 的计算方法及 RTC Server API 的说明请查阅 [Server 连麦 SDK](https://developer.qiniu.com/pili/sdk/1640/server-rtc-sdk) ，另外，我们也开源了一份[ App Server 的实现代码供开发者参考](https://github.com/pili-engineering/pili-sdk-demo-server)。
+关于 roomToken 的计算方法及 RTC Server API 的说明请查阅 [七牛连麦服务端 API 接口规范 v2.0](Documents/Qiniu-RTC-Server-API-v2.md) ，另外，我们也开源了一份[ App Server 的实现代码供开发者参考](https://github.com/pili-engineering/pili-sdk-demo-server)。
 
 ### 2.3 房间管理
 连麦本质上是一个视频会议，因此我们引入了连麦房间的概念，用于隔离不同主播的连麦过程，保障数据的安全及独立。连麦系统要求连麦的各方必须首先进入同一个连麦房间，然后才能开始视频会议的过程。
 
 ![](Documents/screenshots/pili-rtc-room-manage.png)
 
-房间的 API 主要分为两个部分，一部分在客户端，另一部分在服务端。在客户端 SDK 中，只有加入/离开连麦房间的接口。我们把创建/销毁连麦房间的功能放到了服务端，由 App Server 向七牛的服务器发送请求来完成。关于服务端 API 的详细内容，请查阅 [Server 连麦 SDK](https://developer.qiniu.com/pili/sdk/1640/server-rtc-sdk)。
+房间的 API 主要分为两个部分，一部分在客户端，另一部分在服务端。在客户端 SDK 中，只有加入/离开连麦房间的接口。我们把创建/销毁连麦房间的功能放到了服务端，由 App Server 向七牛的服务器发送请求来完成。关于服务端 API 的详细内容，请查阅 [七牛连麦服务端 API 接口规范 v2.0](Documents/Qiniu-RTC-Server-API-v2.md)。
 
 ## 3 应用场景
 ### 3.1 视频会议
@@ -137,7 +137,7 @@ PLRTCStreamingKit 是七牛推出的一款适用于 iOS 平台的连麦互动 SD
 
 ### 6.3 如何从 v1 版本连麦更新到 v2 版本？
 
-可参考 [这个文档](https://github.com/pili-engineering/PLRTCStreamingKit/docs/how-to-upgrade-to-v2.md)
+可参考 [这个文档](Documents/how-to-upgrade-to-v2.md)
 
 ### 6.4 运行 demo 后的账号密码哪里来 ？
 
