@@ -29,6 +29,7 @@
 		939879621FCD4BE8003CDB4E /* PLRTCStreamingSettingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879611FCD4BE8003CDB4E /* PLRTCStreamingSettingManager.m */; };
 		939879681FCD50AF003CDB4E /* PLRTCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939879671FCD50AF003CDB4E /* PLRTCMasterViewController.m */; };
 		9398796B1FCD50E8003CDB4E /* PLRTCStreamingMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398796A1FCD50E8003CDB4E /* PLRTCStreamingMasterViewController.m */; };
+		93AF4C6D1FD94912005317F7 /* qiniu.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AF4C6C1FD94912005317F7 /* qiniu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		939879671FCD50AF003CDB4E /* PLRTCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRTCMasterViewController.m; sourceTree = "<group>"; };
 		939879691FCD50E8003CDB4E /* PLRTCStreamingMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLRTCStreamingMasterViewController.h; sourceTree = "<group>"; };
 		9398796A1FCD50E8003CDB4E /* PLRTCStreamingMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLRTCStreamingMasterViewController.m; sourceTree = "<group>"; };
+		93AF4C6C1FD94912005317F7 /* qiniu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qiniu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				9398791A1FCD23B5003CDB4E /* Assets.xcassets */,
 				9398791C1FCD23B5003CDB4E /* LaunchScreen.storyboard */,
 				9337019A1FCECA4A0072D909 /* qiniuLogo.png */,
+				93AF4C6C1FD94912005317F7 /* qiniu.png */,
 				9398791F1FCD23B5003CDB4E /* Info.plist */,
 				939879201FCD23B5003CDB4E /* main.m */,
 			);
@@ -294,6 +297,7 @@
 			files = (
 				939879561FCD4B1A003CDB4E /* PLRTCSettingViewController.xib in Resources */,
 				939879451FCD4A22003CDB4E /* LoginViewController.xib in Resources */,
+				93AF4C6D1FD94912005317F7 /* qiniu.png in Resources */,
 				9398791E1FCD23B5003CDB4E /* LaunchScreen.storyboard in Resources */,
 				9398791B1FCD23B5003CDB4E /* Assets.xcassets in Resources */,
 				939879191FCD23B5003CDB4E /* Main.storyboard in Resources */,
@@ -531,7 +535,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W2TP34G2MM;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PLRTCStreamingKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -547,7 +552,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W2TP34G2MM;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PLRTCStreamingKitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
