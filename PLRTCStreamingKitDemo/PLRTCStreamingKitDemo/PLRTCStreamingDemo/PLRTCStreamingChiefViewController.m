@@ -403,11 +403,7 @@ static const CGSize videoSizeMap[] = {
         self.session.rtcMinVideoBitrate= 100 * 1000;
         self.session.rtcMaxVideoBitrate= 300 * 1000;
         
-#ifndef TEST_YOUME
         [self.session startConferenceWithRoomName:self.roomName userID:self.userID roomToken:self.roomToken rtcConfiguration:configuration];
-#else
-        [self.session joinWithChannelID:_roomName userID:self.userID role:5 appKey:@"YOUME5BE427937AF216E88E0F84C0EF148BD29B691556" token:@"" rtcConfiguration:configuration];
-#endif
         self.startConferenceTime = [NSDate date];
     }
     else {
