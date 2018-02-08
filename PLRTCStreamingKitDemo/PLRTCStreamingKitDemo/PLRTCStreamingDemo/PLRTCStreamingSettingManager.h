@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "PLTypeDefines.h"
+#import <PLRTCStreamingKit/PLRTCStreamingKit.h>
 
 @interface PLRTCStreamingSettingManager : NSObject
 
