@@ -1,6 +1,6 @@
 {
   "name": "PLRTCStreamingKit",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "summary": "Pili iOS media streaming framework via RTMP.",
   "homepage": "https://github.com/pili-engineering/PLRTCStreamingKit",
   "license": "Apache License, Version 2.0",
@@ -9,23 +9,12 @@
   },
   "source": {
     "git": "https://github.com/pili-engineering/PLRTCStreamingKit.git",
-    "tag": "v3.0.0"
+    "tag": "v3.1.0"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0"
   },
   "requires_arc": true,
-  "dependencies": {
-    "pili-librtmp": [
-      "1.0.7"
-    ],
-    "HappyDNS": [
-      "0.3.10"
-    ],
-    "QNNetDiag": [
-      "0.0.6"
-    ]
-  },
   "frameworks": [
     "UIKit",
     "AVFoundation",
@@ -41,7 +30,13 @@
     "icucore",
     "sqlite3"
   ],
-  "public_header_files": "Pod/Library/include/**/*.h",
-  "source_files": "Pod/Library/include/**/*.[h|m]",
-  "vendored_libraries": "Pod/Library/*.a"
+  "subspecs": [
+    {
+      "name": "iphoneos",
+      "vendored_frameworks": [
+        "Pod/Library/PLRTCStreamingKit.framework",
+        "Pod/Library/HappyDNS.framework"
+      ]
+    }
+  ]
 }

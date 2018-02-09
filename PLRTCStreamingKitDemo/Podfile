@@ -1,5 +1,10 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
 
 target 'PLRTCStreamingKitDemo' do
   pod "PLRTCStreamingKit", :path => "../"
+
+  #pod "PLRTCStreamingKit", :podspec => '../PLRTCStreamingKit.podspec'
+ # pod "PLRTCStreamingKit", :podspec => '../PLRTCStreamingKit-Universal.podspec'
   pod "PLPlayerKit"
 end

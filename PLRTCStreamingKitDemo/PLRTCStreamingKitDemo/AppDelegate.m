@@ -7,9 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "PLStreamingKit.h"
+#import <PLRTCStreamingKit/PLRTCStreamingKit.h>
 #import "PLHomeViewController.h"
-#import "PLMediaStreamingSession.h"
 
 @interface AppDelegate ()
 

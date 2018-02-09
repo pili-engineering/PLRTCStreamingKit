@@ -35,7 +35,8 @@ PLRTCStreamingKit 是七牛推出的一款适用于 iOS 平台的连麦互动 SD
 | 支持返听功能 | 唱歌更易把握节奏 | 
 | 支持截屏功能 | 轻松分享美好瞬间 | 
 | 支持 iOS 10 ReplayKit 录屏 | 方便分享游戏过程 | 
-| 支持苹果 ATS 安全标准 | 安全性更高 |  
+| 支持苹果 ATS 安全标准 | 安全性更高 |
+| 支持 QUIC 推流功能 | 弱网推流更流畅 |
 
 <a id="2"></a>
 # 2 阅读对象
@@ -159,10 +160,21 @@ $ sudo gem install cocoapods
 
 ```ruby
 target 'TargetName' do
+#真机(默认)
 pod 'PLRTCStreamingKit'
 end
 ```
-
+   
+有需要使用模拟器 + 真机的客户，可如下编写你的`Podfile`，    
+  
+```ruby
+target 'TargetName' do
+#真机+模拟器
+pod "PLRTCStreamingKit", :podspec => 'https://raw.githubusercontent.com/pili-engineering/PLRTCStreamingKit/master/PLRTCStreamingKit-Universal.podspec'
+end
+```      
+####warning:    
+####鉴于 iOS 上架时，目前只支持动态库真机，请在上架前，更换至真机版本
 然后，运行如下的命令：
 
 ```bash
@@ -178,7 +190,7 @@ $ pod install
 在 `AppDelegate.m` 中添加引用
 
 ```Objective-C
-#import <PLStreamingEnv.h>
+#import <PLRTCStreamingKit/PLRTCStreamingKit.h>
 ```
 
 并在 `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` 中添加如下代码:
@@ -190,7 +202,7 @@ $ pod install
 然后在 `ViewController.m` 中添加引用
 
 ```Objective-C
-#import <PLMediaStreamingSession.h>
+#import <PLRTCStreamingKit/PLRTCStreamingKit.h>
 ```
 
 <a id="5.3.2"></a>
@@ -1048,7 +1060,7 @@ Xcode 会额外自动创建一个类型为 `Broadcast UI Extension` 的 Target�
 创建推流 API 调用管理类，添加头文件引用：
 
 ``` objectivec
-#import <PLStreamingSession.h>
+#import <PLRTCStreamingKit/PLRTCStreamingKit.h>
 ```
 
 头文件参考
@@ -1056,7 +1068,7 @@ Xcode 会额外自动创建一个类型为 `Broadcast UI Extension` 的 Target�
 ``` objectivec
 #import <Foundation/Foundation.h>
 
-#import <PLStreamingSession.h>
+#import <PLRTCStreamingKit/PLRTCStreamingKit.h>
 
 @interface BroadcastManager : NSObject
 
@@ -1200,7 +1212,7 @@ audioConfiguration.inputAudioChannelDescriptions = @[kPLAudioChannelApp, kPLAudi
 在目标工程中，引用 `PLRTCSession.h`
 
 ```Objective-C
-#import "PLRTCSession.h"
+#import <PLRTCStreamingKit/PLRTCSession.h>
 ```
 
 添加 session 属性
@@ -1448,7 +1460,17 @@ error 状态对应的 Delegate 回调方法是
 
 <a id="7"></a>
 # 8 历史记录
-- 3.0.0 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/master/iOS/ReleaseNotes/release-notes-3.0.0.md))         
+- 3.1.0 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/ReleaseNotes/release-notes-3.1.0.md) && [API Diffs](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/APIDiffs/api-diffs-3.1.0.md))
+- 功能
+  - 支持 QUIC 推流功能
+- 缺陷
+  - 修复某些机型在特定配置下推流画面不完整的问题
+  - 修复切换摄像头瞬间画面出现镜像的问题
+  - 修复偶现进入后台时崩溃的问题
+  - 修复偶现内存泄漏的问题
+  - 修复纯连麦时摄像头数据无法回调的问题
+
+- 3.0.0 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/ReleaseNotes/release-notes-3.0.0.md))
  - 基本的推流和连麦对讲功能    
  - 基本的视频合流和音频混音功能    
  - 支持丰富的连麦消息回调    

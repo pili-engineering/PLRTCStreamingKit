@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Aaron. All rights reserved.
 //
 
-#import "PLMediaStreamingKit.h"
+#import <PLRTCStreamingKit/PLRTCStreamingKit.h>
 #import "PLRTCStreamingViewerViewController.h"
 #import <PLPlayerKit/PLPlayerKit.h>
 #import "PLRTCStreamingViewerViewController.h"

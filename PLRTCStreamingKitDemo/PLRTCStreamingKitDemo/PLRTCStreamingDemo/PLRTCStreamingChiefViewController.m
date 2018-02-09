@@ -7,7 +7,7 @@
 //
 
 #import "PLRTCStreamingChiefViewController.h"
-#import "PLMediaStreamingKit.h"
+#import <PLRTCStreamingKit/PLRTCStreamingKit.h>
 #import <PLPlayerKit/PLPlayerKit.h>
 #import "PLRTCStreamingSettingManager.h"
 #import "PLRTCStreamingSettingView.h"

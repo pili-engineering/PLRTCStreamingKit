@@ -7,7 +7,7 @@
 //
 
 #import "PLRTCChiefViewController.h"
-#import "PLRTCSession.h"
+#import <PLRTCStreamingKit/PLRTCSession.h>
 #import "AppServerBase.h"
 
 const static char *rtcStateNames[] = {
