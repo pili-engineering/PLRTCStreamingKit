@@ -160,7 +160,11 @@ $ sudo gem install cocoapods
 
 ```ruby
 target 'TargetName' do
+#真机(默认)
 pod 'PLRTCStreamingKit'
+
+#真机+模拟器
+#pod "PLRTCStreamingKit", :podspec => 'https://github.com/pili-engineering/PLRTCStreamingKit/master/PLRTCStreamingKit-Universal.podspec'
 end
 ```
 
