@@ -173,8 +173,8 @@ target 'TargetName' do
 pod "PLRTCStreamingKit", :podspec => 'https://raw.githubusercontent.com/pili-engineering/PLRTCStreamingKit/master/PLRTCStreamingKit-Universal.podspec'
 end
 ```      
-####warning:    
-####鉴于 iOS 上架时，目前只支持动态库真机，请在上架前，更换至真机版本
+#### warning:
+#### 鉴于 iOS 上架时，目前只支持动态库真机，请在上架前，更换至真机版本
 然后，运行如下的命令：
 
 ```bash
