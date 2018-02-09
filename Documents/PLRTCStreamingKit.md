@@ -162,12 +162,19 @@ $ sudo gem install cocoapods
 target 'TargetName' do
 #真机(默认)
 pod 'PLRTCStreamingKit'
-
-#真机+模拟器
-#pod "PLRTCStreamingKit", :podspec => 'https://github.com/pili-engineering/PLRTCStreamingKit/master/PLRTCStreamingKit-Universal.podspec'
 end
 ```
-
+   
+有需要使用模拟器 + 真机的客户，可如下编写你的`Podfile`，    
+  
+```ruby
+target 'TargetName' do
+#真机+模拟器
+pod "PLRTCStreamingKit", :podspec => 'https://raw.githubusercontent.com/pili-engineering/PLRTCStreamingKit/master/PLRTCStreamingKit-Universal.podspec'
+end
+```      
+####warning:    
+####鉴于 iOS 上架时，目前只支持动态库真机，请在上架前，更换至真机版本
 然后，运行如下的命令：
 
 ```bash
