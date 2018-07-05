@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PLTypeDefines.h"
 
 @protocol PLRTCVideoViewDelegate
 
@@ -18,5 +19,13 @@
 
 
 @interface PLRTCVideoView : UIView <PLRTCVideoViewDelegate>
+    
+- (instancetype)initWithFrame:(CGRect)frame;
+    
+-(instancetype)init __attribute__((unavailable("init not available, call initWithFrame instead")));
+    
+-(instancetype)initWithCoder:(NSCoder *)aDecoder __attribute__((unavailable("initWithCoder not available, call initWithFrame instead")));
+
+- (void)setRenderMode:(PLRTCVideoRenderMode)mode;
 
 @end

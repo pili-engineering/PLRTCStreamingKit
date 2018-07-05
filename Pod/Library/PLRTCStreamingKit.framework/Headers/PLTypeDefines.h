@@ -462,6 +462,16 @@ typedef NS_ENUM(NSUInteger, PLRTCVideoSizePreset) {
     PLRTCVideoSizePreset544x960,        //16:9
     PLRTCVideoSizePreset720x960,        //4:3
     PLRTCVideoSizePreset720x1280,       //16:9
+    PLRTCVideoSizePreset192x144,        //4:3
+    PLRTCVideoSizePreset320x176,        //9:16
+    PLRTCVideoSizePreset320x240,        //3:4
+    PLRTCVideoSizePreset432x240,        //9:16
+    PLRTCVideoSizePreset640x368,        //9:16
+    PLRTCVideoSizePreset640x480,        //3:4
+    PLRTCVideoSizePreset720x544,        //3:4
+    PLRTCVideoSizePreset960x544,        //9:16
+    PLRTCVideoSizePreset960x720,        //3:4
+    PLRTCVideoSizePreset1280x720,       //9:16
     PLRTCVideoSizePresetDefault = PLRTCVideoSizePreset368x640
 };
 
@@ -481,7 +491,9 @@ typedef NS_ENUM(NSUInteger, PLRTCState) {
     /// 已进入到连麦的状态
     PLRTCStateConferenceStarted,
     /// 连麦已结束的状态
-    PLRTCStateConferenceStopped
+    PLRTCStateConferenceStopped,
+    /// 连麦断网重连的状态
+    PLRTCStateConferenceReconnecting
 };
 
 /// 设备授权状态
@@ -588,6 +600,23 @@ typedef NS_ENUM(NSUInteger, PLRTC_SERVER_REGION) {
     
     PLRTC_SERVER_REGION_EXT      = 10000, // 使用扩展服务器
     PLRTC_SERVER_REGION_DEFAULT  = 10001, // 缺省服务器
+};
+
+typedef NS_ENUM(NSInteger, PLRTCVideoRenderMode) {
+    /**
+     @brief 连麦画面按比例放大或缩小，直到视频画面和设置连麦页面中相差比率较大的边长度达到一致，画面可能会拉伸或裁剪，但不会变形
+     */
+    PLRTCVideoRenderModeScaleAspectFill = 1,
+    /**
+     @brief 连麦画面按比例放大或缩小，直到视频画面和设置连麦页面中相差比率较小的边长度达到一致，画面可能会拉伸，但不会变形
+     */
+    PLRTCVideoRenderModeScaleAspectFit = 2,
+    /**
+     @brief 自适应画面
+     连麦原视频为横屏或竖屏，连麦设置显示画面为竖屏或横屏，适配模式为 PLRTCVideoRenderModeScaleAspectFit
+     连麦视频与设置显示画面同为横屏或竖屏，适配模式为 PLRTCVideoRenderModeScaleAspectFill
+     */
+    PLRTCVideoRenderModeFit = 3
 };
 
 #endif

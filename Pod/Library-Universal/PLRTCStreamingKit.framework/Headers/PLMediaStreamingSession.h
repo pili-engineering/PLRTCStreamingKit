@@ -465,6 +465,22 @@
  */
 @interface PLMediaStreamingSession (CameraSource)
 
+/*!
+ @property   captureSession
+ @abstract   视频采集 session，只读变量，给有特殊需求的开发者使用，最好不要修改
+ 
+ @since      v2.3.2
+ */
+@property (nonatomic, readonly) AVCaptureSession * _Nullable captureSession;
+
+/*!
+ @property   videoCaptureDeviceInput
+ @abstract   视频采集输入源，只读变量，给有特殊需求的开发者使用，最好不要修改
+ 
+ @since      v2.3.2
+ */
+@property (nonatomic, readonly) AVCaptureDeviceInput * _Nullable videoCaptureDeviceInput;
+
 /// default as AVCaptureDevicePositionBack.
 @property (nonatomic, assign) AVCaptureDevicePosition   captureDevicePosition;
 
