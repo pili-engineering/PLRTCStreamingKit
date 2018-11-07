@@ -117,7 +117,7 @@ PLRTCStreamingKit 提供四种不同的 API，分别介绍如下：
 | PLAudioCaptureConfiguration | 音频采集配置   | 麦克风配置，音频数据声道等 |
 | PLVideoStreamingConfiguration   | 视频编码配置   | 配置视频帧率，码率等      |
 | PLAudioStreamingConfiguration   | 音频编码配置    | 配置音频帧率等    |
-| PLRTCConfiguration| 连麦相关配置 | 包括连麦编码分辨率，河流分辨率等   |   
+| PLRTCConfiguration| 连麦相关配置 | 包括连麦编码分辨率，合流分辨率等   |   
 | PLAudioEffectConfiguration   | 音效配置    | 配置混音等    |
 | PLAudioEffectCustomConfiguration| 用户自定义音效配置 | 用户自定义音效配置   |
 
@@ -173,8 +173,8 @@ target 'TargetName' do
 pod "PLRTCStreamingKit", :podspec => 'https://raw.githubusercontent.com/pili-engineering/PLRTCStreamingKit/master/PLRTCStreamingKit-Universal.podspec'
 end
 ```      
-####warning:    
-####鉴于 iOS 上架时，目前只支持动态库真机，请在上架前，更换至真机版本
+#### warning:
+#### 鉴于 iOS 上架时，目前只支持动态库真机，请在上架前，更换至真机版本
 然后，运行如下的命令：
 
 ```bash
@@ -1460,15 +1460,26 @@ error 状态对应的 Delegate 回调方法是
 
 <a id="7"></a>
 # 8 历史记录
+- 3.2.0 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/ReleaseNotes/release-notes-3.2.0.md) && [API Diffs](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/APIDiffs/api-diffs-3.2.0.md))
+- 功能
+    - 支持连麦画面填充模式
+    - 添加 URL 签名超时推流失败回调
+    - 添加连麦重连状态
+- 缺陷
+    - 修复连麦音视频状态无回调问题
+    - 修复 swfit 无法正常连麦
+    - 修复非 1935 端口的地址不能推流问题
+    - 修复连麦前后音量大小不一致
+
 - 3.1.0 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/ReleaseNotes/release-notes-3.1.0.md) && [API Diffs](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/APIDiffs/api-diffs-3.1.0.md))
 - 功能
-  - 支持 QUIC 推流功能
+    - 支持 QUIC 推流功能
 - 缺陷
-  - 修复某些机型在特定配置下推流画面不完整的问题
-  - 修复切换摄像头瞬间画面出现镜像的问题
-  - 修复偶现进入后台时崩溃的问题
-  - 修复偶现内存泄漏的问题
-  - 修复纯连麦时摄像头数据无法回调的问题
+    - 修复某些机型在特定配置下推流画面不完整的问题
+    - 修复切换摄像头瞬间画面出现镜像的问题
+    - 修复偶现进入后台时崩溃的问题
+    - 修复偶现内存泄漏的问题
+    - 修复纯连麦时摄像头数据无法回调的问题
 
 - 3.0.0 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/ReleaseNotes/release-notes-3.0.0.md))
  - 基本的推流和连麦对讲功能    

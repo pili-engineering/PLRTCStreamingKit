@@ -5,6 +5,6 @@ target 'PLRTCStreamingKitDemo' do
   pod "PLRTCStreamingKit", :path => "../"
 
   #pod "PLRTCStreamingKit", :podspec => '../PLRTCStreamingKit.podspec'
- # pod "PLRTCStreamingKit", :podspec => '../PLRTCStreamingKit-Universal.podspec'
+#  pod "PLRTCStreamingKit", :podspec => '../PLRTCStreamingKit-Universal.podspec'
   pod "PLPlayerKit"
 end
