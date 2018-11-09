@@ -1460,6 +1460,15 @@ error 状态对应的 Delegate 回调方法是
 
 <a id="7"></a>
 # 8 历史记录
+- 3.2.1 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/ReleaseNotes/release-notes-3.2.1.md) && [API Diffs](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/APIDiffs/api-diffs-3.2.1.md))
+- 功能
+    - 重构了音频采集模块，包含音频数据采集、背景音乐播放、混音、音效、返听。重构后，插入耳机与否，背景音乐的声音都会从扬声器/耳机发出。
+    - 支持在推流过程中往视频画面上添加多个静态图片和文字
+- 优化
+    - 优化相机的对焦效果和曝光效果
+- 缺陷
+    - 修复特殊场景下 Wi-Fi 和 4G 之间频繁切换偶现的预览画面卡住的问题
+    - 修复开始推流后 0.2 秒内音频爆音的问题
 - 3.2.0 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/ReleaseNotes/release-notes-3.2.0.md) && [API Diffs](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/APIDiffs/api-diffs-3.2.0.md))
 - 功能
     - 支持连麦画面填充模式
@@ -1467,7 +1476,7 @@ error 状态对应的 Delegate 回调方法是
     - 添加连麦重连状态
 - 缺陷
     - 修复连麦音视频状态无回调问题
-    - 修复 swfit 无法正常连麦
+    - 修复 Swift 无法正常连麦
     - 修复非 1935 端口的地址不能推流问题
     - 修复连麦前后音量大小不一致
 

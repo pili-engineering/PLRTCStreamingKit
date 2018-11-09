@@ -8,7 +8,7 @@
 
 #import "AppServerBase.h"
 
-#define QINIUBaseDomain @"https://api.pdex-service.com"
+#define QINIUBaseDomain @"https://api-demo-v2.qnsdk.com"
 
 @interface AppServerBase()
 
