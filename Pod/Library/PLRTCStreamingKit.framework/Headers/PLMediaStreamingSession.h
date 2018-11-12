@@ -655,6 +655,58 @@
 
 @end
 
+#pragma mark - Category (OverlayView)
+
+/*!
+ * @category PLMediaStreamingSession(OverlayView)
+ *
+ * @discussion 与贴纸、文字相关的接口
+ */
+@interface PLMediaStreamingSession (OverlayView)
+
+/*!
+ * @brief 贴纸、文字的父视图
+ 
+ *  @since v2.3.2
+ */
+@property (nonatomic, strong, readonly) UIView * _Nonnull overlaySuperView;
+
+/**
+ * @brief 将 view 添加到 overlaySuperView 上。
+ *
+ * @param view 要添加的视图
+ 
+ *  @since v2.3.2
+ */
+- (void)addOverlayView:(UIView * _Nullable )view;
+
+/**
+ * @brief 刷新 overlaySuperView 上的 view 视图。
+ *
+ * @param view 要刷新的视图
+ 
+ *  @since v2.3.2
+ */
+- (void)refreshOverlayView:(UIView * _Nullable)view;
+
+/**
+ * @brief 将 view 从 overlaySuperView 上移除。
+ *
+ * @param view 要移除的视图
+ 
+ *  @since v2.3.2
+ */
+- (void)removeOverlayView:(UIView * _Nullable)view;
+
+/**
+ * @brief 将 overlaySuperView 上的所有子视图 view 移除。
+ 
+ *  @since v2.3.2
+ */
+- (void)removeAllOverlayViews;
+
+@end
+
 #pragma mark - Category (MicrophoneSource)
 
 /*!
