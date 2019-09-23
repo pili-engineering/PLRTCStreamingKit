@@ -2,9 +2,9 @@ PODS:
   - HappyDNS (0.3.12)
   - PLPlayerKit (3.2.0):
     - HappyDNS (~> 0.3.10)
-  - PLRTCStreamingKit (3.2.1):
-    - PLRTCStreamingKit/iphoneos (= 3.2.1)
-  - PLRTCStreamingKit/iphoneos (3.2.1)
+  - PLRTCStreamingKit (3.2.2):
+    - PLRTCStreamingKit/iphoneos (= 3.2.2)
+  - PLRTCStreamingKit/iphoneos (3.2.2)
 
 DEPENDENCIES:
   - PLPlayerKit
@@ -22,8 +22,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   HappyDNS: 691a3041128055d09866f86e6e9ca90f24da1f18
   PLPlayerKit: 47ce06af8619f5879f4550a36223aa753a4198c8
-  PLRTCStreamingKit: a1e06b79516d1a0da04ce9fb114c46e95f11c309
+  PLRTCStreamingKit: 94391de3cdb8c6b8810f51ec1d0b0b6e7f222fd0
 
 PODFILE CHECKSUM: 71be7404b57d31581b04dbaf30924f96a2e7426f
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.5

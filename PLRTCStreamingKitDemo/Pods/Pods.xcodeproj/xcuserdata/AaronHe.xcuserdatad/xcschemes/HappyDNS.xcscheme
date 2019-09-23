@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "36369F4A07756542838310A553B35623"
+               BlueprintIdentifier = "96F820A9CBD7912A405650AC238D1F8E"
+               BuildableName = "libHappyDNS.a"
                BlueprintName = "HappyDNS"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libHappyDNS.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

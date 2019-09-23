@@ -1459,7 +1459,10 @@ error 状态对应的 Delegate 回调方法是
 对于流畅度和清晰度的问题，可以参考[码率、fps、分辨对清晰度及流畅度的影响](#fluency-influence)这一小节。
 
 <a id="7"></a>
-# 8 历史记录
+# 8 历史记录   
+- 3.2.2 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/ReleaseNotes/release-notes-3.2.2.md) && [API Diffs](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/APIDiffs/api-diffs-3.2.2.md))
+- 缺陷
+    - 修复 iOS 13 合流花屏问题
 - 3.2.1 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/ReleaseNotes/release-notes-3.2.1.md) && [API Diffs](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/APIDiffs/api-diffs-3.2.1.md))
 - 功能
     - 重构了音频采集模块，包含音频数据采集、背景音乐播放、混音、音效、返听。重构后，插入耳机与否，背景音乐的声音都会从扬声器/耳机发出。

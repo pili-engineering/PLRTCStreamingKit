@@ -320,7 +320,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PLRTCStreamingKitDemo/Pods-PLRTCStreamingKitDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PLRTCStreamingKitDemo/Pods-PLRTCStreamingKitDemo-frameworks.sh",
 				"${PODS_ROOT}/../../Pod/Library/PLRTCStreamingKit.framework",
 				"${PODS_ROOT}/../../Pod/Library/HappyDNS.framework",
 			);
@@ -331,7 +331,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLRTCStreamingKitDemo/Pods-PLRTCStreamingKitDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PLRTCStreamingKitDemo/Pods-PLRTCStreamingKitDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ABD06EAD180ED7F166946706 /* [CP] Check Pods Manifest.lock */ = {
