@@ -505,6 +505,12 @@
 @property (nonatomic, assign, getter=isTouchToFocusEnable) BOOL touchToFocusEnable;
 
 /*!
+ @property  noExposurePoint
+ @abstract  弱化曝光度,该属性默认关闭。
+ */
+@property (nonatomic, assign,getter=isNoExposurePoint) BOOL noExposurePoint;
+
+/*!
  @property  smoothAutoFocusEnabled
  @abstract  该属性适用于视频拍摄过程中用来减缓因自动对焦产生的镜头伸缩，使画面不因快速的对焦而产生抖动感。该属性默认开启。
  */
@@ -902,6 +908,12 @@
  *
  */
 - (void)stopConference;
+
+/*!
+ * 修改连麦画面在合流画面中的位置
+ *
+ */
+- (void)changeRemotePosition:(NSString *)userID posX:(NSInteger)x posY:(NSInteger)y width:(NSInteger)width height:(NSInteger)height;
 
 /*!
  * 踢出指定 userID 的用户

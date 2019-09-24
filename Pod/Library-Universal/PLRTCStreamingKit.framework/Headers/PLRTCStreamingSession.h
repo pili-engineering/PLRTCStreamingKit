@@ -483,6 +483,12 @@
 - (void)stopConference;
 
 /*!
+ * 修改连麦画面在合流画面中的位置
+ *
+ */
+- (void)changeRemotePosition:(NSString *)userID posX:(NSInteger)x posY:(NSInteger)y width:(NSInteger)width height:(NSInteger)height;
+
+/*!
  * 踢出指定 userID 的用户
  *
  * @discussion 踢出指定 userID 的用户。
