@@ -1460,6 +1460,9 @@ error 状态对应的 Delegate 回调方法是
 
 <a id="7"></a>
 # 8 历史记录   
+- 3.2.3 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/ReleaseNotes/release-notes-3.2.3.md) && [API Diffs](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/APIDiffs/api-diffs-3.2.3.md))
+- 缺陷
+    - 修复 Xcode12 编译报错问题
 - 3.2.2 ([Release Notes](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/ReleaseNotes/release-notes-3.2.2.md) && [API Diffs](https://github.com/pili-engineering/PLRTCStreamingKit/blob/master/APIDiffs/api-diffs-3.2.2.md))
 - 缺陷
     - 修复 iOS 13 合流花屏问题
